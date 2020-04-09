@@ -297,6 +297,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 774986717}
+  - component: {fileID: 774986718}
   m_Layer: 0
   m_Name: Ground
   m_TagString: Untagged
@@ -322,6 +323,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &774986718
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 774986716}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1001 &906005389
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -560,6 +575,11 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: b272f5645c5a01b49b5b7ec066e3f3b4, type: 2}
+    - target: {fileID: 137231876560530974, guid: c737dd230724d61469e1c672cf47ed9e,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a5ec96e14ccaad545a08ea3b548856ee, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c737dd230724d61469e1c672cf47ed9e, type: 3}
 --- !u!1 &1512374121 stripped
@@ -586,7 +606,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50dc222b1ba85a44c88a8d699209fd85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MoveSpeed: 10
+  MoveSpeed: 2
+  mask:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!1 &1774743191
 GameObject:
   m_ObjectHideFlags: 0
