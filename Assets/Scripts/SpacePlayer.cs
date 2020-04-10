@@ -8,6 +8,10 @@ public class SpacePlayer : MonoBehaviour
 
     public int playerSpeed = 5;
 
+    //variable to reference prefab. Prefab = gameObject to be reused
+
+    public GameObject ProjectilePrefab;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -37,6 +41,17 @@ public class SpacePlayer : MonoBehaviour
         else if(myTransform.position.x  < -4.5f)
         {
             myTransform.position = new Vector3(4.5f, myTransform.position.y, myTransform.position.z);
+        }
+
+        //Press Spacebar to fire a laser
+        //If the player presses down the spacebar, a laser will shoot out.
+        if(Input.GetKeyDown("space"))
+        {
+            //Set Position for Laser
+            Vector3 laserPosition = new Vector3(myTransform.position.x, myTransform.position.y + 1, myTransform.position.z);
+
+            //Fire Projectile
+            Instantiate(ProjectilePrefab, laserPosition, Quaternion.identity);
         }
     }
 }
