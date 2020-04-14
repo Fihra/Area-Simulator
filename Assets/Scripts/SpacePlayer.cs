@@ -33,14 +33,14 @@ public class SpacePlayer : MonoBehaviour
         // if the player object is positioned at x=4.5, then the game object will be 
         // be positioned at x = -4.5
 
-        if(myTransform.position.x > 4.5f)
+        if(myTransform.position.x > 6.5f)
         {
-            myTransform.position = new Vector3(-4.5f, myTransform.position.y, myTransform.position.z);
+            myTransform.position = new Vector3(-6.5f, myTransform.position.y, myTransform.position.z);
         }
 
-        else if(myTransform.position.x  < -4.5f)
+        else if(myTransform.position.x  < -6.5f)
         {
-            myTransform.position = new Vector3(4.5f, myTransform.position.y, myTransform.position.z);
+            myTransform.position = new Vector3(6.5f, myTransform.position.y, myTransform.position.z);
         }
 
         //Press Spacebar to fire a laser
