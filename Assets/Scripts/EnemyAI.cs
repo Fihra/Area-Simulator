@@ -23,14 +23,13 @@ public class EnemyAI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float randomMoving = Random.Range(-5.0f, 5.0f);
-
         myTransform.Translate(Vector3.down * moveSpeed * Time.deltaTime);
         
         if(myTransform.position.y < -5.0f)
         {
             //change current speed
             //change the x axis
+            moveSpeed = Random.Range(3, 10);
             spawnLocation = Random.Range(-1.80f, 1.80f);
             myTransform.position = new Vector3(spawnLocation, 5, -5);
             //Destroy(gameObject);
