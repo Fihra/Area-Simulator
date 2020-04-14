@@ -21,6 +21,8 @@ public class EnemyAI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        float randomMoving = Random.Range(-5.0f, 5.0f);
+
         myTransform.Translate(Vector3.down * moveSpeed * Time.deltaTime);
         
         if(myTransform.position.y < -5.0f)
