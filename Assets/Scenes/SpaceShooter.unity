@@ -316,7 +316,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerSpeed: 20
-  playerLives: 3
   rend: {fileID: 0}
   ProjectilePrefab: {fileID: 4828051126867909657, guid: a005312ebd02242408e51af9a06d8a4e,
     type: 3}
@@ -582,6 +581,7 @@ GameObject:
   - component: {fileID: 1736179573}
   - component: {fileID: 1736179572}
   - component: {fileID: 1736179571}
+  - component: {fileID: 1736179574}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -654,6 +654,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1736179574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1736179570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fccd4b6fbbbbfa4694f5f2729fb3fb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  x: -130
+  y: 50
+  width: 400
+  height: 100
 --- !u!1001 &1787909064
 PrefabInstance:
   m_ObjectHideFlags: 0

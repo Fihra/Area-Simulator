@@ -7,7 +7,7 @@ public class SpacePlayer : MonoBehaviour
     private Transform myTransform;
 
     public int playerSpeed = 5;
-    public int playerLives = 3;
+    public static int playerLives = 3;
     public static int score = 0;
 
     float timer = 0f;
