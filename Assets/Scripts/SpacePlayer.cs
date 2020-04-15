@@ -8,6 +8,11 @@ public class SpacePlayer : MonoBehaviour
 
     public int playerSpeed = 5;
     public int playerLives = 3;
+    public static int score = 0;
+
+    float timer = 0f;
+
+    public Renderer rend;
 
     //variable to reference prefab. Prefab = gameObject to be reused
 
@@ -17,6 +22,7 @@ public class SpacePlayer : MonoBehaviour
     void Start()
     {
         myTransform = transform;
+        rend = GetComponent<Renderer>();
         //Spawn point
         //Position to be at -3, -3, -1 (x, y, z)
         myTransform.position = new Vector3(-1, -3, -1);
@@ -54,13 +60,24 @@ public class SpacePlayer : MonoBehaviour
             //Fire Projectile
             Instantiate(ProjectilePrefab, laserPosition, Quaternion.identity);
         }
+
+        if(Time.time - timer > 1)
+        {
+            rend.enabled = true;
+        }
+
+        print("Lives: " + playerLives + "   Score: " + score + "      Current Time: " + Time.time + "     Timer to respond: " + timer);
     }
+
+
 
     void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.CompareTag("Enemy"))
         {
             playerLives--;
+            rend.enabled = false;
+            timer = Time.time;
             if(playerLives < 1)
             {
                 Destroy(gameObject);

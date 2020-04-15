@@ -52,7 +52,10 @@ public class EnemyAI : MonoBehaviour
             Destroy(gameObject);
         }
         
-
+        if(other.gameObject.CompareTag("Player"))
+        {
+            Destroy(gameObject);
+        }
 
     }
 }

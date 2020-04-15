@@ -27,4 +27,13 @@ public class Projectile : MonoBehaviour
         }
         
     }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.CompareTag("Enemy"))
+        {
+            SpacePlayer.score += 50; 
+            Destroy(gameObject);
+        }
+    }
 }
