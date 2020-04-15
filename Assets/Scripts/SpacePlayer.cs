@@ -7,6 +7,7 @@ public class SpacePlayer : MonoBehaviour
     private Transform myTransform;
 
     public int playerSpeed = 5;
+    public int playerLives = 3;
 
     //variable to reference prefab. Prefab = gameObject to be reused
 
@@ -52,6 +53,19 @@ public class SpacePlayer : MonoBehaviour
 
             //Fire Projectile
             Instantiate(ProjectilePrefab, laserPosition, Quaternion.identity);
+        }
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.CompareTag("Enemy"))
+        {
+            playerLives--;
+            if(playerLives < 1)
+            {
+                Destroy(gameObject);
+            }
+            
         }
     }
 }
