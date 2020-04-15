@@ -20,7 +20,7 @@ public class EnemyAI : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        x = Random.Range(-1.80f, 1.80f);
+        x = Random.Range(-6.80f, 6.80f);
         myTransform = transform;
         myTransform.position = new Vector3(x, y, z);
         moveSpeed = Random.Range(minSpeed, maxSpeed);
@@ -36,7 +36,7 @@ public class EnemyAI : MonoBehaviour
             //change current speed
             //change the x axis
             moveSpeed = Random.Range(minSpeed, maxSpeed);
-            x = Random.Range(-1.80f, 1.80f);
+            x = Random.Range(-6.80f, 6.80f);
             myTransform.position = new Vector3(x, y, z);
             //Destroy(gameObject);
         }
