@@ -10,6 +10,8 @@ public class SpacePlayer : MonoBehaviour
     public static int playerHealth = 10;
     public static int score = 0;
 
+    public HealthManager healthBar;
+
     float timer = 0f;
 
     public Renderer rend;
@@ -23,6 +25,7 @@ public class SpacePlayer : MonoBehaviour
     {
         myTransform = transform;
         rend = GetComponent<Renderer>();
+        healthBar.SetMaxHealth(playerHealth);
         //Spawn point
         //Position to be at -3, -3, -1 (x, y, z)
         myTransform.position = new Vector3(-1, -3, -1);
@@ -66,7 +69,7 @@ public class SpacePlayer : MonoBehaviour
             rend.enabled = true;
         }
 
-        print("Lives: " + playerHealth + "   Score: " + score + "      Current Time: " + Time.time + "     Timer to respond: " + timer);
+        //print("Lives: " + playerHealth + "   Score: " + score + "      Current Time: " + Time.time + "     Timer to respond: " + timer);
     }
 
 
@@ -76,6 +79,7 @@ public class SpacePlayer : MonoBehaviour
         if(other.gameObject.CompareTag("Enemy"))
         {
             playerHealth--;
+            healthBar.SetHealth(playerHealth);
             rend.enabled = false;
             timer = Time.time;
             if(playerHealth < 1)

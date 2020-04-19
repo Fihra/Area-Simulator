@@ -17,18 +17,22 @@ public class Spawning : MonoBehaviour
 
     void Update()
     {
-        if(enemiesInArea.Count < 3)
+        if(enemiesInArea.Count < 1)
         {
             SpawnHorde();
         }
+
+        
         
     }
 
 
     public void SpawnHorde()
     {
-
-
+        if(SpacePlayer.score >= 10 && SpacePlayer.score <= 50)
+        {
+            hordeMultiplier = 2;
+        }
         enemyCount = enemyCount * hordeMultiplier;
         for(int i = 0; i < enemyCount; i++)
         {

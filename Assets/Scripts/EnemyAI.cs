@@ -44,7 +44,7 @@ public class EnemyAI : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        Debug.Log(other);
+        //Debug.Log(other);
         if (other.gameObject.CompareTag("Projectile"))
         {
             //if the laser hits the enemy
