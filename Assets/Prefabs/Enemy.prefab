@@ -107,9 +107,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3841adc3be69664093b4fe2275cddfe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 3
-  minSpeed: 3
-  maxSpeed: 7
+  moveSpeed: 1
+  minSpeed: 1
+  maxSpeed: 2
   EnemyProjectile: {fileID: 8530266306232032500, guid: 691c568677d833a4cbb4ca7db839897e,
     type: 3}
 --- !u!54 &1328560970

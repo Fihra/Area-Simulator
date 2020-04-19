@@ -7,11 +7,11 @@ public class EnemyAI : MonoBehaviour
     private Transform myTransform;
 
     public float moveSpeed;
-    public float minSpeed = 5.0f;
-    public float maxSpeed = 10.0f;
+    public float minSpeed = 1.0f;
+    public float maxSpeed = 3.0f;
 
     float x;
-    float y = 5.0f, z = -1.0f;
+    float y = 10.0f, z = -1.0f;
 
     public GameObject EnemyProjectile;
 

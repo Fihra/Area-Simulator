@@ -10,6 +10,9 @@ public class Spawning : MonoBehaviour
     public int enemyCount = 3;
     public int hordeMultiplier = 1;
 
+    //float x;
+    //float y = 10.0f;
+
     public static List<GameObject> enemiesInArea = new List<GameObject>();
 
     void Update()
@@ -24,6 +27,8 @@ public class Spawning : MonoBehaviour
 
     public void SpawnHorde()
     {
+
+
         enemyCount = enemyCount * hordeMultiplier;
         for(int i = 0; i < enemyCount; i++)
         {

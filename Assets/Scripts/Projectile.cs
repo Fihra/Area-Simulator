@@ -32,7 +32,7 @@ public class Projectile : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Enemy"))
         {
-            SpacePlayer.score += 50;
+            SpacePlayer.score += 1;
             Spawning.enemiesInArea.Remove(other.gameObject);
             Destroy(gameObject);
         }

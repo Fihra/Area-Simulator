@@ -7,7 +7,7 @@ public class SpacePlayer : MonoBehaviour
     private Transform myTransform;
 
     public int playerSpeed = 5;
-    public static int playerLives = 3;
+    public static int playerHealth = 10;
     public static int score = 0;
 
     float timer = 0f;
@@ -66,7 +66,7 @@ public class SpacePlayer : MonoBehaviour
             rend.enabled = true;
         }
 
-        print("Lives: " + playerLives + "   Score: " + score + "      Current Time: " + Time.time + "     Timer to respond: " + timer);
+        print("Lives: " + playerHealth + "   Score: " + score + "      Current Time: " + Time.time + "     Timer to respond: " + timer);
     }
 
 
@@ -75,10 +75,10 @@ public class SpacePlayer : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Enemy"))
         {
-            playerLives--;
+            playerHealth--;
             rend.enabled = false;
             timer = Time.time;
-            if(playerLives < 1)
+            if(playerHealth < 1)
             {
                 Destroy(gameObject);
             }
