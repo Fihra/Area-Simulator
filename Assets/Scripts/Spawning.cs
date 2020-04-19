@@ -17,7 +17,9 @@ public class Spawning : MonoBehaviour
 
     void Update()
     {
-        if(enemiesInArea.Count < 1)
+
+        Debug.Log("Enemies in Area: " + enemiesInArea.Count);
+        if (enemiesInArea.Count <= 0)
         {
             SpawnHorde();
         }
@@ -31,10 +33,11 @@ public class Spawning : MonoBehaviour
     {
         if(SpacePlayer.score >= 10 && SpacePlayer.score <= 50)
         {
+            enemyCount++;
             hordeMultiplier = 2;
         }
-        enemyCount = enemyCount * hordeMultiplier;
-        for(int i = 0; i < enemyCount; i++)
+        //enemyCount = enemyCount * hordeMultiplier;
+        for (int i = 0; i < enemyCount; i++)
         {
             GameObject newEnem = Instantiate(enemy, spawnLocation.position, Quaternion.identity);
             enemiesInArea.Add(newEnem);

@@ -9,14 +9,14 @@ public class HealthManager : MonoBehaviour
 
     public void SetMaxHealth(int health)
     {
-        Debug.Log("Set Max Health: " + health);
+        //Debug.Log("Set Max Health: " + health);
         slider.maxValue = SpacePlayer.playerHealth;
         slider.value = health;
     }
 
     public void SetHealth(int health)
     {
-        Debug.Log("Set Health: " + health);
+        //Debug.Log("Set Health: " + health);
         slider.value = health;
     }
 }

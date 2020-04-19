@@ -79,6 +79,8 @@ public class SpacePlayer : MonoBehaviour
         if(other.gameObject.CompareTag("Enemy"))
         {
             playerHealth--;
+            Spawning.enemiesInArea.Remove(other.gameObject);
+            Debug.Log("Enemies in Area: " + Spawning.enemiesInArea.Count);
             healthBar.SetHealth(playerHealth);
             rend.enabled = false;
             timer = Time.time;
