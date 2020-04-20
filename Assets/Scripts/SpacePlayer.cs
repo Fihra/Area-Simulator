@@ -10,6 +10,8 @@ public class SpacePlayer : MonoBehaviour
     public static int playerHealth = 10;
     public static int score = 0;
 
+    float shipBoundary = 0.5f;
+
     public HealthManager healthBar;
 
     float timer = 0f;
@@ -38,6 +40,9 @@ public class SpacePlayer : MonoBehaviour
         //Move the player left and right
         myTransform.Translate(Vector3.right * playerSpeed * Input.GetAxisRaw("Horizontal") * Time.deltaTime);
 
+        //Move player up and down
+        myTransform.Translate(Vector3.up * playerSpeed * Input.GetAxisRaw("Vertical") * Time.deltaTime);
+
         //Make the player wrap
         // if the player is at x = -2, then it should appear at x=2. Vice Versa
         // if the player object is positioned at x=4.5, then the game object will be 
@@ -51,6 +56,17 @@ public class SpacePlayer : MonoBehaviour
         else if(myTransform.position.x  < -6.5f)
         {
             myTransform.position = new Vector3(6.5f, myTransform.position.y, myTransform.position.z);
+        }
+
+        else if(myTransform.position.y + shipBoundary > Camera.main.orthographicSize)
+        {
+            Vector3 boundPos = new Vector3(myTransform.position.x, Camera.main.orthographicSize - shipBoundary, myTransform.position.z);
+            myTransform.position = boundPos;
+        }
+        else if(myTransform.position.y - shipBoundary < -Camera.main.orthographicSize)
+        {
+            Vector3 boundPos = new Vector3(myTransform.position.x, -Camera.main.orthographicSize + shipBoundary, myTransform.position.z);
+            myTransform.position = boundPos;
         }
 
         //Press Spacebar to fire a laser
