@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum EnemyLevel {LEVEL1, LEVEL2, LEVEL3, LEVEL4, LEVEL5, LEVEL6 };
+
 public class Spawning : MonoBehaviour
 {
     public GameObject enemy;
@@ -12,6 +14,8 @@ public class Spawning : MonoBehaviour
 
     //float x;
     //float y = 10.0f;
+
+    EnemyLevel currentLevel = EnemyLevel.LEVEL1;
 
     public static List<GameObject> enemiesInArea = new List<GameObject>();
 
@@ -28,11 +32,12 @@ public class Spawning : MonoBehaviour
         
     }
 
-
     public void SpawnHorde()
     {
+        //Level 2
         if(SpacePlayer.score >= 10 && SpacePlayer.score <= 50)
         {
+            currentLevel = EnemyLevel.LEVEL2;
             enemyCount++;
             hordeMultiplier = 2;
         }

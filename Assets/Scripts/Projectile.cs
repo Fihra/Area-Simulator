@@ -21,7 +21,7 @@ public class Projectile : MonoBehaviour
         // Game Object = laser = go up
         myTransform.Translate(Vector3.up * projectileSpeed * Time.deltaTime);
 
-        if(myTransform.position.y > 10)
+        if(myTransform.position.y > 6.5f)
         {
             Destroy(gameObject);
         }
@@ -34,6 +34,10 @@ public class Projectile : MonoBehaviour
         {
             SpacePlayer.score += 1;
             Spawning.enemiesInArea.Remove(other.gameObject);
+            Destroy(gameObject);
+        }
+        if(other.gameObject.CompareTag("BiggerEnemy"))
+        {
             Destroy(gameObject);
         }
     }
