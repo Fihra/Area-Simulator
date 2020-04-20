@@ -6,7 +6,7 @@ public enum EnemyLevel {LEVEL1, LEVEL2, LEVEL3, LEVEL4, LEVEL5, LEVEL6 };
 
 public class Spawning : MonoBehaviour
 {
-    public GameObject enemy;
+    public List <GameObject> enemies;
     public Transform spawnLocation;
 
     public int enemyCount = 3;
@@ -44,7 +44,7 @@ public class Spawning : MonoBehaviour
         //enemyCount = enemyCount * hordeMultiplier;
         for (int i = 0; i < enemyCount; i++)
         {
-            GameObject newEnem = Instantiate(enemy, spawnLocation.position, Quaternion.identity);
+            GameObject newEnem = Instantiate(enemies[0], spawnLocation.position, Quaternion.identity);
             enemiesInArea.Add(newEnem);
         }
     }

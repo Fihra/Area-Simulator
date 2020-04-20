@@ -31,6 +31,12 @@ public class EnemyAI : MonoBehaviour
     {
         myTransform.Translate(Vector3.down * moveSpeed * Time.deltaTime);
         
+        if(myTransform.position.y < -3.0f && myTransform.position.y > -3.1f)
+        {
+            SpacePlayer.earthHealth-=100;
+            Debug.Log(SpacePlayer.earthHealth);
+        }
+
         if(myTransform.position.y < -5.0f)
         {
             //change current speed

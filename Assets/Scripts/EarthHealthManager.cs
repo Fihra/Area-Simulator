@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class HealthManager : MonoBehaviour
+public class EarthHealthManager : MonoBehaviour
 {
     public Slider slider;
 
-    public void SetMaxHealth(int health)
+    public void SetEarthMaxHealth(int health)
     {
         //Debug.Log("Set Max Health: " + health);
-        slider.maxValue = SpacePlayer.playerHealth;
+        slider.maxValue = SpacePlayer.earthHealth;
         slider.value = health;
     }
 
@@ -19,6 +19,4 @@ public class HealthManager : MonoBehaviour
         //Debug.Log("Set Health: " + health);
         slider.value = health;
     }
-
-   
 }
