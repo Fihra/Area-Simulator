@@ -13,7 +13,7 @@ public class BiggerEnemyAI : MonoBehaviour
     float x;
     float y = 10.0f, z = -1.0f;
 
-    public static int health = 3;
+    public int health = 3;
 
     void Start()
     {
@@ -52,21 +52,23 @@ public class BiggerEnemyAI : MonoBehaviour
             //if the laser hits the enemy
             //destroy enemy
             health--;
+            Destroy(other.gameObject);
             if(health < 1)
             {
                 SpacePlayer.score += 3;
-                Spawning.enemiesInArea.Remove(other.gameObject);
+                Spawning.enemiesInArea.Remove(gameObject);
                 //Debug.Log("Enemies in Area: " + Spawning.enemiesInArea.Count);
                 Destroy(gameObject);
             }
             
         }
 
+
         if (other.gameObject.CompareTag("Player"))
         {
             if(health < 1)
             {
-                Spawning.enemiesInArea.Remove(other.gameObject);
+                //Spawning.enemiesInArea.Remove(other.gameObject);
                 Destroy(gameObject);
             }
             

@@ -21,15 +21,26 @@ public class Spawning : MonoBehaviour
 
     void Update()
     {
-
         Debug.Log("Enemies in Area: " + enemiesInArea.Count);
         if (enemiesInArea.Count <= 0)
         {
             SpawnHorde();
-        }
+        } 
+    }
 
-        
-        
+    public void enemiesLevel1And2()
+    {
+        for (int i = 0; i < enemyCount; i++)
+        {
+            GameObject newEnem = Instantiate(enemies[0], spawnLocation.position, Quaternion.identity);
+            enemiesInArea.Add(newEnem);
+        }
+    }
+
+    public void enemiesLevel3()
+    {
+        GameObject newBigEnem = Instantiate(enemies[1], spawnLocation.position, Quaternion.identity);
+        enemiesInArea.Add(newBigEnem);
     }
 
     public void SpawnHorde()
@@ -39,13 +50,21 @@ public class Spawning : MonoBehaviour
         {
             currentLevel = EnemyLevel.LEVEL2;
             enemyCount++;
-            hordeMultiplier = 2;
+            hordeMultiplier++;
         }
         //enemyCount = enemyCount * hordeMultiplier;
-        for (int i = 0; i < enemyCount; i++)
+        enemiesLevel1And2();
+
+        if(SpacePlayer.score >= 51 && SpacePlayer.score < 100)
         {
-            GameObject newEnem = Instantiate(enemies[0], spawnLocation.position, Quaternion.identity);
-            enemiesInArea.Add(newEnem);
+            currentLevel = EnemyLevel.LEVEL3;
+            enemyCount++;
+            hordeMultiplier++;
+        }
+
+        if(currentLevel == EnemyLevel.LEVEL3)
+        {
+            enemiesLevel3();
         }
     }
 }

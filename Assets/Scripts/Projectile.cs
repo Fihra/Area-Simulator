@@ -30,15 +30,24 @@ public class Projectile : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.CompareTag("Enemy"))
+        if (other.gameObject.CompareTag("Enemy"))
         {
             SpacePlayer.score += 1;
             Spawning.enemiesInArea.Remove(other.gameObject);
             Destroy(gameObject);
         }
-        if(other.gameObject.CompareTag("BiggerEnemy"))
-        {
-            Destroy(gameObject);
-        }
+        //if (other.gameObject.CompareTag("BiggerEnemy"))
+        //{
+        //    Destroy(gameObject);
+        //    if (BiggerEnemyAI.health < 1)
+        //    {
+        //        SpacePlayer.score += 3;
+        //        Destroy(gameObject);
+                
+        //        Spawning.enemiesInArea.Remove(other.gameObject);
+
+        //    }
+
+        //}
     }
 }

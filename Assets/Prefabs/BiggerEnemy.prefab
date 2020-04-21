@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 8012432538512576312}
   m_Layer: 0
   m_Name: BiggerEnemy
-  m_TagString: Untagged
+  m_TagString: BiggerEnemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -123,3 +123,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed8366c96faa40446bbdf0d92d12f53e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moveSpeed: 0
+  minSpeed: 1
+  maxSpeed: 2

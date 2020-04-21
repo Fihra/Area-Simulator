@@ -49,15 +49,16 @@ public class EnemyAI : MonoBehaviour
         {
             //if the laser hits the enemy
             //destroy enemy
-            Spawning.enemiesInArea.Remove(other.gameObject);
-            Debug.Log("Enemies in Area: " + Spawning.enemiesInArea.Count);
+            //Destroy(other.gameObject);
+            //Spawning.enemiesInArea.Remove(other.gameObject);
+            //Debug.Log("Enemies in Area: " + Spawning.enemiesInArea.Count);
             Destroy(gameObject);
         }
         
         if(other.gameObject.CompareTag("Player"))
         {
-            Spawning.enemiesInArea.Remove(other.gameObject);
-            Debug.Log("Enemies in Area: " + Spawning.enemiesInArea.Count);
+            //Spawning.enemiesInArea.Remove(other.gameObject);
+            //Debug.Log("Enemies in Area: " + Spawning.enemiesInArea.Count);
             Destroy(gameObject);
         }
 
