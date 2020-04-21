@@ -10,7 +10,7 @@ public class EarthHealthManager : MonoBehaviour
     public void SetEarthMaxHealth(int health)
     {
         //Debug.Log("Set Max Health: " + health);
-        slider.maxValue = SpacePlayer.earthHealth;
+        slider.maxValue = EarthBorder.earthHealth;
         slider.value = health;
     }
 

@@ -28,10 +28,10 @@ public class BiggerEnemyAI : MonoBehaviour
     {
         myTransform.Translate(Vector3.down * moveSpeed * Time.deltaTime);
 
-        if (myTransform.position.y < -3.0f)
-        {
-            SpacePlayer.earthHealth -=3;
-        }
+        //if (myTransform.position.y < -3.0f)
+        //{
+        //    EarthBorder.earthHealth -=3;
+        //}
 
         if (myTransform.position.y < -5.0f)
         {

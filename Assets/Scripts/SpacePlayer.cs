@@ -7,14 +7,14 @@ public class SpacePlayer : MonoBehaviour
     private Transform myTransform;
 
     public int playerSpeed = 5;
-    public static int earthHealth = 1000;
+    
     public static int playerHealth = 10;
     public static int score = 0;
 
     float shipBoundary = 0.5f;
 
     public HealthManager healthBar;
-    public EarthHealthManager earthHealthBar;
+    
 
     float timer = 0f;
 
@@ -30,7 +30,7 @@ public class SpacePlayer : MonoBehaviour
         myTransform = transform;
         rend = GetComponent<Renderer>();
         healthBar.SetMaxHealth(playerHealth);
-        earthHealthBar.SetEarthMaxHealth(earthHealth);
+        
         
         //Spawn point
         //Position to be at -3, -3, -1 (x, y, z)

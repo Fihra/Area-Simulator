@@ -7,6 +7,7 @@ TagManager:
   - Projectile
   - Enemy
   - BiggerEnemy
+  - Earth
   layers:
   - Default
   - TransparentFX
