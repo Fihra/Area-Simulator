@@ -68,3 +68,9 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+
+#Wwise
+/Area-Simulator_WwiseProject/*.cache
+/Area-Simulator_WwiseProject/*.akd
+/Area-Simulator_WwiseProject/*.validationcache
+/Area-Simulator_WwiseProject/*.wem
