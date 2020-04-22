@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="135">
+	<RootPaths>
+		<ProjectRoot>D:\Fabian_Files\Unity_Files\Area-Simulator\Area-Simulator_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>D:\Fabian_Files\Unity_Files\Area-Simulator\Area-Simulator_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>D:\Fabian_Files\Unity_Files\Area-Simulator\Area-Simulator_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>D:\Fabian_Files\Unity_Files\Area-Simulator\Area-Simulator_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3161908922" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
+			<ShortName>Main</ShortName>
+			<Path>Main.bnk</Path>
+			<IncludedEvents>
+				<Event Id="4179480828" Name="Asteroid_Explode" ObjectPath="\Events\Default Work Unit\SFX\Asteroids\Asteroid_Explode" DurationType="OneShot" DurationMin="0.167239" DurationMax="0.227139">
+					<IncludedMemoryFiles>
+						<File Id="452059209" Language="SFX">
+							<ShortName>Player_Damage.wav</ShortName>
+							<Path>SFX\Player_Damage_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="436641829" Name="Earth_Damage" ObjectPath="\Events\Default Work Unit\SFX\Player\Earth_Damage" DurationType="OneShot" DurationMin="0.164366" DurationMax="0.164366">
+					<IncludedMemoryFiles>
+						<File Id="452059209" Language="SFX">
+							<ShortName>Player_Damage.wav</ShortName>
+							<Path>SFX\Player_Damage_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4291438327" Name="Final_Phase" ObjectPath="\Events\Default Work Unit\Music\Final_Phase" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<IncludedMemoryFiles>
+						<File Id="619328717" Language="SFX">
+							<ShortName>Final_Phase_4-4_160bpm_L37.wav</ShortName>
+							<Path>SFX\Final_Phase_4-4_160bpm_L37_D79FB2B7.wem</Path>
+						</File>
+						<File Id="918826630" Language="SFX">
+							<ShortName>Final_Phase_Intro_4-4_160bpm_L8.wav</ShortName>
+							<Path>SFX\Final_Phase_Intro_4-4_160bpm_L8_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3982605422" Name="Laser" ObjectPath="\Events\Default Work Unit\SFX\Player\Laser" DurationType="OneShot" DurationMin="0.193220" DurationMax="0.193220">
+					<IncludedMemoryFiles>
+						<File Id="153341213" Language="SFX">
+							<ShortName>Laser.wav</ShortName>
+							<Path>SFX\Laser_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="844214104" Name="Phase_I_Theme" ObjectPath="\Events\Default Work Unit\Music\Phase_I_Theme" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="472603808" Language="SFX">
+							<ShortName>Phase_I_intro_4-4_160bpm_L8.wav</ShortName>
+							<Path>SFX\Phase_I_intro_4-4_160bpm_L8_D79FB2B7.wem</Path>
+						</File>
+						<File Id="610525599" Language="SFX">
+							<ShortName>Phase_I_4-4_160bpm_L32.wav</ShortName>
+							<Path>SFX\Phase_I_4-4_160bpm_L32_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3259071049" Name="Phase_II_Theme" ObjectPath="\Events\Default Work Unit\Music\Phase_II_Theme" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="309980930" Language="SFX">
+							<ShortName>Phase_II_4-4_160bpm_L16.wav</ShortName>
+							<Path>SFX\Phase_II_4-4_160bpm_L16_D79FB2B7.wem</Path>
+						</File>
+						<File Id="649578492" Language="SFX">
+							<ShortName>Phase_II_intro_4-4_160bpm_L8.wav</ShortName>
+							<Path>SFX\Phase_II_intro_4-4_160bpm_L8_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="674754006" Name="Phase_III_Theme" ObjectPath="\Events\Default Work Unit\Music\Phase_III_Theme" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="869204135" Language="SFX">
+							<ShortName>Phase_III_4-4_160bpm_L12.wav</ShortName>
+							<Path>SFX\Phase_III_4-4_160bpm_L12_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2394473770" Name="Phase_IV_Theme" ObjectPath="\Events\Default Work Unit\Music\Phase_IV_Theme" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="506109477" Language="SFX">
+							<ShortName>Phase_IV_4-4_160bpm_L16.wav</ShortName>
+							<Path>SFX\Phase_IV_4-4_160bpm_L16_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2074073782" Name="Player_Damage" ObjectPath="\Events\Default Work Unit\SFX\Player\Player_Damage" DurationType="OneShot" DurationMin="0.162478" DurationMax="0.229779">
+					<IncludedMemoryFiles>
+						<File Id="452059209" Language="SFX">
+							<ShortName>Player_Damage.wav</ShortName>
+							<Path>SFX\Player_Damage_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3083087645" Name="Player_Death" ObjectPath="\Events\Default Work Unit\SFX\Player\Player_Death" DurationType="OneShot" DurationMin="0.362650" DurationMax="0.362650">
+					<IncludedMemoryFiles>
+						<File Id="452059209" Language="SFX">
+							<ShortName>Player_Damage.wav</ShortName>
+							<Path>SFX\Player_Damage_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2521525023" Name="Title_Theme" ObjectPath="\Events\Default Work Unit\Music\Title_Theme" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="524337188" Language="SFX">
+							<ShortName>Title_140bpm_4-4_L16.wav</ShortName>
+							<Path>SFX\Title_140bpm_4-4_L16_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

@@ -1,6 +1,147 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{1FDE36BB-798D-4C6D-B1ED-8231D2067C25}" SchemaVersion="97">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{1FDE36BB-798D-4C6D-B1ED-8231D2067C25}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{1FDE36BB-798D-4C6D-B1ED-8231D2067C25}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Music" ID="{531A2E4B-EA54-43A6-8669-F87D8C6878F1}" ShortID="835878327">
+					<ChildrenList>
+						<Event Name="Title_Theme" ID="{1E6E94BF-9CD5-47DE-BC29-BD39A85BF730}">
+							<ChildrenList>
+								<Action Name="" ID="{016235DF-0D1C-4150-9961-34AA3A1CB4A8}" ShortID="115503786">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Title" ID="{4A604F85-0EAF-4033-8B26-C75FD8FED5BF}" WorkUnitID="{FB36B153-EB3A-475E-B501-E0534AF281DC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Phase_I_Theme" ID="{E5410E4E-E4F0-4CF8-B2B6-DBF4B970C854}">
+							<ChildrenList>
+								<Action Name="" ID="{A5210743-2AE8-492E-AA6A-4A6A862F2C94}" ShortID="250269109">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Phase_I" ID="{DB330E8E-E25D-4B4F-A2B2-F3EB62E72393}" WorkUnitID="{FB36B153-EB3A-475E-B501-E0534AF281DC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Phase_II_Theme" ID="{0A142AE3-B12D-456F-A381-0BFBE6E14638}">
+							<ChildrenList>
+								<Action Name="" ID="{1D5B9245-202B-4105-B12E-969A0B932D3B}" ShortID="925426311">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Phase_II" ID="{F2034514-2CD2-4AE0-83B2-D99080DD6C27}" WorkUnitID="{FB36B153-EB3A-475E-B501-E0534AF281DC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Phase_III_Theme" ID="{86329F60-AE62-4106-AB6A-12E0BCD72670}">
+							<ChildrenList>
+								<Action Name="" ID="{420FD0FB-DF13-4993-AC54-92AA25DBA9A3}" ShortID="139954429">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Phase_III" ID="{2F429011-9E80-42AB-9FB5-1945384DAC4B}" WorkUnitID="{FB36B153-EB3A-475E-B501-E0534AF281DC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Phase_IV_Theme" ID="{EEAFEB69-9D8A-47DB-99CF-1650AC6FBF72}">
+							<ChildrenList>
+								<Action Name="" ID="{3E852EB5-66BC-4142-B118-80D0523E4AD6}" ShortID="145161081">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Phase_IV" ID="{5EEF7D99-A140-4BFC-9DAA-882A942FB46A}" WorkUnitID="{FB36B153-EB3A-475E-B501-E0534AF281DC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Final_Phase" ID="{1866D3C7-735A-402A-9030-0687861EBFC0}">
+							<ChildrenList>
+								<Action Name="" ID="{3ABCEE4A-1D47-4167-B43B-8C76DC6C2C57}" ShortID="1015960439">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Final_Phase" ID="{74D229D0-7570-4541-AA95-B774D8CD7A02}" WorkUnitID="{FB36B153-EB3A-475E-B501-E0534AF281DC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="SFX" ID="{CB42DC8A-38FD-4A45-AD54-B1AF7A7FF885}" ShortID="551564228">
+					<ChildrenList>
+						<Folder Name="Player" ID="{BEC80C6A-716A-42B6-B311-1F2B617E8B45}" ShortID="575226600">
+							<ChildrenList>
+								<Event Name="Laser" ID="{869D65BC-7FB6-479C-B235-D03DF520FFFC}">
+									<ChildrenList>
+										<Action Name="" ID="{DE9A9A59-18A8-4E03-977F-68DE2DAA3E71}" ShortID="599549474">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Laser" ID="{22B3D3A0-956B-46D5-BE4F-FF92E13122AD}" WorkUnitID="{3D1A90AE-AAA0-4AA7-94FB-9239989963B7}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Player_Damage" ID="{28EB0547-3D8A-4F14-B299-C3AE9CD10ECB}">
+									<ChildrenList>
+										<Action Name="" ID="{2E20CFD3-E303-4389-BEBF-DF650F84F112}" ShortID="209414758">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Player_Damage" ID="{9C295F35-E812-428B-A0E4-6AC5F2F67384}" WorkUnitID="{3D1A90AE-AAA0-4AA7-94FB-9239989963B7}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Player_Death" ID="{84EC0627-887E-4F2B-AA60-757CBEBA2917}">
+									<ChildrenList>
+										<Action Name="" ID="{3BF42E59-0A28-45D9-87C4-1AFCEBA82BBF}" ShortID="46518361">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Player_Death" ID="{B5D0ECBA-9787-4AF5-8FF7-D26DA7FD5CF3}" WorkUnitID="{3D1A90AE-AAA0-4AA7-94FB-9239989963B7}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Earth_Damage" ID="{6329980B-03E0-428B-A4CF-2F5CD3D1119D}">
+									<ChildrenList>
+										<Action Name="" ID="{AA98555E-709C-4605-976A-96E66D01E98A}" ShortID="1053147571">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Earth_Damage" ID="{F31F6C7A-85C1-4061-A99D-C54AE77D6C9E}" WorkUnitID="{3D1A90AE-AAA0-4AA7-94FB-9239989963B7}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Asteroids" ID="{FF9032D1-2027-4E52-A154-7F583307409C}" ShortID="239284184">
+							<ChildrenList>
+								<Event Name="Asteroid_Explode" ID="{19B03CB3-03B8-4BF1-858E-CC1A6B7AA9DA}">
+									<ChildrenList>
+										<Action Name="" ID="{65BFA146-2032-4C1F-AE8D-C0EAFC1E5F1B}" ShortID="344217944">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Asteroid_Explode" ID="{8145852D-552E-429C-A4C1-2606A49E9FB4}" WorkUnitID="{3D1A90AE-AAA0-4AA7-94FB-9239989963B7}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="UI" ID="{957BFA20-0A70-4E07-9F90-7855D92B0BBA}" ShortID="298919466"/>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

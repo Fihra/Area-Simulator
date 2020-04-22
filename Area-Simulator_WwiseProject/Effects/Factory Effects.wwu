@@ -128,8 +128,18 @@
 								<Property Name="DelayTime" Type="Real32" Value="1"/>
 							</PropertyList>
 						</Effect>
-						<Effect Name="Echoes_Linear" ID="{D20F3717-EBA2-4E3A-84F8-C8BD431563FB}" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3"/>
-						<Effect Name="One_Tap_Half_Second" ID="{B8FE0D3B-7AAB-4344-89FE-177602B7BF19}" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3"/>
+						<Effect Name="Echoes_Linear" ID="{D20F3717-EBA2-4E3A-84F8-C8BD431563FB}" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
+							<PropertyList>
+								<Property Name="DelayTime" Type="Real32" Value="0.44"/>
+								<Property Name="WetDryMix" Type="Real32" Value="50.5"/>
+							</PropertyList>
+						</Effect>
+						<Effect Name="One_Tap_Half_Second" ID="{B8FE0D3B-7AAB-4344-89FE-177602B7BF19}" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
+							<PropertyList>
+								<Property Name="DelayTime" Type="Real32" Value="0.38"/>
+								<Property Name="WetDryMix" Type="Real32" Value="43"/>
+							</PropertyList>
+						</Effect>
 						<Effect Name="One_Tap_Quarter_Second" ID="{6BD2D67D-601A-45A6-AD4C-2C089078EBED}" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
 							<PropertyList>
 								<Property Name="DelayTime" Type="Real32" Value="0.25"/>
@@ -1132,7 +1142,7 @@
 								<Effect Name="Inside_Your_Head" ID="{AE2D0AE1-8963-400A-AA4A-52A7A6397F89}" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
 									<PropertyList>
 										<Property Name="DecayTime" Type="Real32" Value="1"/>
-										<Property Name="Density" Type="Real32" Value="82"/>
+										<Property Name="Density" Type="Real32" Value="53"/>
 										<Property Name="Diffusion" Type="Real32" Value="0"/>
 										<Property Name="DryLevel" Type="Real32" Value="-96"/>
 										<Property Name="ERLevel" Type="Real32" Value="-3"/>
@@ -1144,8 +1154,8 @@
 										<Property Name="Filter3Freq" Type="Real32" Value="6930"/>
 										<Property Name="Filter3Gain" Type="Real32" Value="-24"/>
 										<Property Name="HFDamping" Type="Real32" Value="0.5"/>
-										<Property Name="PreDelay" Type="Real32" Value="200"/>
-										<Property Name="Quality" Type="int32" Value="4"/>
+										<Property Name="PreDelay" Type="Real32" Value="26"/>
+										<Property Name="Quality" Type="int32" Value="10"/>
 										<Property Name="ReverbLevel" Type="Real32" Value="-14"/>
 										<Property Name="RoomSize" Type="Real32" Value="-100"/>
 										<Property Name="StereoWidth" Type="Real32" Value="0"/>
@@ -1924,12 +1934,11 @@
 						</Effect>
 						<Effect Name="Fast_LF_Tremolo" ID="{3B09A271-D9D4-4A4E-B545-F681E8313E5F}" PluginName="Wwise Tremolo" CompanyID="0" PluginID="131" PluginType="3">
 							<PropertyList>
-								<Property Name="ModFrequency" Type="Real32" Value="19.84"/>
+								<Property Name="ModFrequency" Type="Real32" Value="574.9"/>
 								<Property Name="ModPWM" Type="Real32" Value="4"/>
-								<Property Name="ModPhaseOffset" Type="Real32" Value="87"/>
-								<Property Name="ModPhaseSpread" Type="Real32" Value="121"/>
+								<Property Name="ModPhaseOffset" Type="Real32" Value="61"/>
+								<Property Name="ModPhaseSpread" Type="Real32" Value="124"/>
 								<Property Name="ModSmoothing" Type="Real32" Value="100"/>
-								<Property Name="ModWaveform" Type="int32" Value="3"/>
 							</PropertyList>
 						</Effect>
 						<Effect Name="Fast_LF_Tremolo_No_Smoothing" ID="{D972718E-231C-4DBF-9288-FCAF4BF47B50}" PluginName="Wwise Tremolo" CompanyID="0" PluginID="131" PluginType="3">
@@ -1949,8 +1958,11 @@
 							<ChildrenList>
 								<Effect Name="Octave_Up" ID="{A98F423C-EC97-49D8-8698-445CE91F24B7}" PluginName="Wwise Pitch Shifter" CompanyID="0" PluginID="136" PluginType="3">
 									<PropertyList>
+										<Property Name="DelayTime" Type="Real32" Value="81"/>
 										<Property Name="DryLevel" Type="Real32" Value="0"/>
-										<Property Name="Pitch" Type="Real32" Value="1200"/>
+										<Property Name="FilterFrequency" Type="Real32" Value="218"/>
+										<Property Name="FilterType" Type="int32" Value="6"/>
+										<Property Name="Pitch" Type="Real32" Value="-1500"/>
 									</PropertyList>
 								</Effect>
 								<Effect Name="Octave_Down" ID="{062EC4B1-5372-4D1E-917B-C757293F2B42}" PluginName="Wwise Pitch Shifter" CompanyID="0" PluginID="136" PluginType="3">
@@ -1970,7 +1982,9 @@
 								</Effect>
 								<Effect Name="Monsterize" ID="{99F80B38-1C45-42CE-9BCD-E94F3885DCAA}" PluginName="Wwise Pitch Shifter" CompanyID="0" PluginID="136" PluginType="3">
 									<PropertyList>
+										<Property Name="DelayTime" Type="Real32" Value="57"/>
 										<Property Name="FilterFrequency" Type="Real32" Value="2000"/>
+										<Property Name="FilterType" Type="int32" Value="4"/>
 										<Property Name="Pitch" Type="Real32" Value="-1200"/>
 									</PropertyList>
 								</Effect>
