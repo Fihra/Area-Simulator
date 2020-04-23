@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5031456984989393377}
   - component: {fileID: 287459600670913964}
   - component: {fileID: 1328560970}
+  - component: {fileID: 1796164488970366593}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -110,8 +111,6 @@ MonoBehaviour:
   moveSpeed: 1
   minSpeed: 1
   maxSpeed: 2
-  EnemyProjectile: {fileID: 8530266306232032500, guid: 691c568677d833a4cbb4ca7db839897e,
-    type: 3}
 --- !u!54 &1328560970
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -128,3 +127,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1796164488970366593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2913855516872815394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81717fa65bd34ac4a9d0db206b9806c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  asteroidExplode:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 6fb85cb3986927b41b5a312fef0d0eea,
+      type: 2}
