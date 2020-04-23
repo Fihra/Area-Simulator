@@ -12,14 +12,328 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9abcf6385bc9e14ba3c44d1c5557cff, type: 3}
   m_Name: AkWwiseProjectData
   m_EditorClassIdentifier: 
-  AcousticTextureWwu: []
-  AuxBusWwu: []
-  BankWwu: []
-  EventWwu: []
-  RtpcWwu: []
-  StateWwu: []
-  SwitchWwu: []
-  TriggerWwu: []
-  ExpandedItems: []
+  AcousticTextureWwu:
+  - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
+    ParentPath: Default Work Unit
+    guid: 46568a48d66b42459f030495cb077982
+    GuidInternal: 
+    m_lastTime: -8586141544290711326
+    List: []
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+    ParentPath: Default Work Unit
+    guid: b58a6e764a9da74bb54916bef11b06b3
+    GuidInternal: 
+    m_lastTime: -8586141544289903423
+    List:
+    - name: Master Audio Bus
+      guid: d8a41415a61d2a41a17e75ca0c2149f3
+      id: 3803692087
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      Path: Default Work Unit\Master Audio Bus
+  BankWwu:
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+    ParentPath: Default Work Unit
+    guid: b9c6da0469b25747b78467067ff884d7
+    GuidInternal: 
+    m_lastTime: -8586139986108544782
+    List:
+    - name: Main
+      guid: 4f3e668c6f4efb40b5fa2aad3ac41d25
+      id: 3161908922
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Main
+        ObjectType: 7
+      Path: Default Work Unit\Main
+  EventWwu:
+  - PhysicalPath: Events\Default Work Unit.wwu
+    ParentPath: Default Work Unit
+    guid: bb36de1f8d796d4cb1ed8231d2067c25
+    GuidInternal: 
+    m_lastTime: -8586139986108624568
+    List:
+    - name: Asteroid_Explode
+      guid: b33cb019b803f14b858ecc1a6b7aa9da
+      id: 4179480828
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX
+        ObjectType: 4
+      - ElementName: Asteroids
+        ObjectType: 4
+      - ElementName: Asteroid_Explode
+        ObjectType: 3
+      Path: Default Work Unit\SFX\Asteroids\Asteroid_Explode
+      maxAttenuation: 0
+      maxDuration: 0.227139
+      minDuration: 0.167239
+    - name: Asteroids
+      guid: d13290ff2720524ea1547f583307409c
+      id: 3903113117
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX
+        ObjectType: 4
+      - ElementName: Asteroids
+        ObjectType: 4
+      - ElementName: Asteroids
+        ObjectType: 3
+      Path: Default Work Unit\SFX\Asteroids\Asteroids
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Earth_Damage
+      guid: 0b982963e0038b42a4cf2f5cd3d1119d
+      id: 436641829
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX
+        ObjectType: 4
+      - ElementName: Player
+        ObjectType: 4
+      - ElementName: Earth_Damage
+        ObjectType: 3
+      Path: Default Work Unit\SFX\Player\Earth_Damage
+      maxAttenuation: 0
+      maxDuration: 0.164366
+      minDuration: 0.164366
+    - name: Final_Phase
+      guid: c7d366185a732a4090300687861ebfc0
+      id: 4291438327
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 4
+      - ElementName: Final_Phase
+        ObjectType: 3
+      Path: Default Work Unit\Music\Final_Phase
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Laser
+      guid: bc659d86b67f9c47b235d03df520fffc
+      id: 3982605422
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX
+        ObjectType: 4
+      - ElementName: Player
+        ObjectType: 4
+      - ElementName: Laser
+        ObjectType: 3
+      Path: Default Work Unit\SFX\Player\Laser
+      maxAttenuation: 0
+      maxDuration: 0.19322
+      minDuration: 0.19322
+    - name: Music
+      guid: 4b2e1a5354eaa6438669f87d8c6878f1
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 4
+      - ElementName: Music
+        ObjectType: 3
+      Path: Default Work Unit\Music\Music
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Phase_I_Theme
+      guid: 4e0e41e5f0e4f84cb2b6dbf4b970c854
+      id: 844214104
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 4
+      - ElementName: Phase_I_Theme
+        ObjectType: 3
+      Path: Default Work Unit\Music\Phase_I_Theme
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Phase_II_Theme
+      guid: e32a140a2db16f45a3810bfbe6e14638
+      id: 3259071049
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 4
+      - ElementName: Phase_II_Theme
+        ObjectType: 3
+      Path: Default Work Unit\Music\Phase_II_Theme
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Phase_III_Theme
+      guid: 609f328662ae0641ab6a12e0bcd72670
+      id: 674754006
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 4
+      - ElementName: Phase_III_Theme
+        ObjectType: 3
+      Path: Default Work Unit\Music\Phase_III_Theme
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Phase_IV_Theme
+      guid: 69ebafee8a9ddb4799cf1650ac6fbf72
+      id: 2394473770
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 4
+      - ElementName: Phase_IV_Theme
+        ObjectType: 3
+      Path: Default Work Unit\Music\Phase_IV_Theme
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Player
+      guid: 6a0cc8be6a71b642b3111f2b617e8b45
+      id: 1069431850
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX
+        ObjectType: 4
+      - ElementName: Player
+        ObjectType: 4
+      - ElementName: Player
+        ObjectType: 3
+      Path: Default Work Unit\SFX\Player\Player
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Player_Damage
+      guid: 4705eb288a3d144fb299c3ae9cd10ecb
+      id: 2074073782
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX
+        ObjectType: 4
+      - ElementName: Player
+        ObjectType: 4
+      - ElementName: Player_Damage
+        ObjectType: 3
+      Path: Default Work Unit\SFX\Player\Player_Damage
+      maxAttenuation: 0
+      maxDuration: 0.229779
+      minDuration: 0.162478
+    - name: Player_Death
+      guid: 2706ec847e882b4faa60757cbeba2917
+      id: 3083087645
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX
+        ObjectType: 4
+      - ElementName: Player
+        ObjectType: 4
+      - ElementName: Player_Death
+        ObjectType: 3
+      Path: Default Work Unit\SFX\Player\Player_Death
+      maxAttenuation: 0
+      maxDuration: 0.36265
+      minDuration: 0.36265
+    - name: SFX
+      guid: 8adc42cbfd38454aad54b1af7a7ff885
+      id: 393239870
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX
+        ObjectType: 4
+      - ElementName: SFX
+        ObjectType: 3
+      Path: Default Work Unit\SFX\SFX
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Title_Theme
+      guid: bf946e1ed59cde47bc29bd39a85bf730
+      id: 2521525023
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 4
+      - ElementName: Title_Theme
+        ObjectType: 3
+      Path: Default Work Unit\Music\Title_Theme
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: UI
+      guid: 20fa7b95700a074e9f907855d92b0bba
+      id: 1551306167
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX
+        ObjectType: 4
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: UI
+        ObjectType: 3
+      Path: Default Work Unit\SFX\UI\UI
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+  RtpcWwu:
+  - PhysicalPath: Game Parameters\Default Work Unit.wwu
+    ParentPath: Default Work Unit
+    guid: 7bed4360815def42bf0e828e185d0507
+    GuidInternal: 
+    m_lastTime: -8586141544290452042
+    List: []
+  StateWwu:
+  - PhysicalPath: States\Default Work Unit.wwu
+    ParentPath: Default Work Unit
+    guid: 862f8136dfc59b45998d51095552ac85
+    GuidInternal: 
+    m_lastTime: -8586141544290112882
+    List: []
+  SwitchWwu:
+  - PhysicalPath: Switches\Default Work Unit.wwu
+    ParentPath: Default Work Unit
+    guid: cdf0899f8ce35d4793c16ee9c6d6a25a
+    GuidInternal: 
+    m_lastTime: -8586141544290142883
+    List: []
+  TriggerWwu:
+  - PhysicalPath: Triggers\Default Work Unit.wwu
+    ParentPath: Default Work Unit
+    guid: 2a4a76caf77b4d448f5c2571d867e2ec
+    GuidInternal: 
+    m_lastTime: -8586141544290481981
+    List: []
+  ExpandedItems:
+  - /Area-Simulator_WwiseProject
+  - /Area-Simulator_WwiseProject/Events
+  - /Area-Simulator_WwiseProject/Events/Default Work Unit
+  - /Area-Simulator_WwiseProject/Events/Default Work Unit/Music
+  - /Area-Simulator_WwiseProject/Events/Default Work Unit/SFX
+  - /Area-Simulator_WwiseProject/Events/Default Work Unit/SFX/Player
+  - /Area-Simulator_WwiseProject/SoundBanks
+  - /Area-Simulator_WwiseProject/SoundBanks/Default Work Unit
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

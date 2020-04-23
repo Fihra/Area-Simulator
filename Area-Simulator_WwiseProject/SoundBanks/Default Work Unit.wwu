@@ -1,6 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{04DAC6B9-B269-4757-B784-67067FF884D7}" SchemaVersion="97">
 	<SoundBanks>
-		<WorkUnit Name="Default Work Unit" ID="{04DAC6B9-B269-4757-B784-67067FF884D7}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{04DAC6B9-B269-4757-B784-67067FF884D7}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Main" ID="{8C663E4F-4E6F-40FB-B5FA-2AAD3AC41D25}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Final_Phase" ID="{1866D3C7-735A-402A-9030-0687861EBFC0}" WorkUnitID="{1FDE36BB-798D-4C6D-B1ED-8231D2067C25}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Phase_III_Theme" ID="{86329F60-AE62-4106-AB6A-12E0BCD72670}" WorkUnitID="{1FDE36BB-798D-4C6D-B1ED-8231D2067C25}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Earth_Damage" ID="{6329980B-03E0-428B-A4CF-2F5CD3D1119D}" WorkUnitID="{1FDE36BB-798D-4C6D-B1ED-8231D2067C25}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Music" ID="{531A2E4B-EA54-43A6-8669-F87D8C6878F1}" WorkUnitID="{1FDE36BB-798D-4C6D-B1ED-8231D2067C25}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Phase_II_Theme" ID="{0A142AE3-B12D-456F-A381-0BFBE6E14638}" WorkUnitID="{1FDE36BB-798D-4C6D-B1ED-8231D2067C25}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Default Work Unit" ID="{FB36B153-EB3A-475E-B501-E0534AF281DC}" WorkUnitID="{FB36B153-EB3A-475E-B501-E0534AF281DC}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Laser" ID="{869D65BC-7FB6-479C-B235-D03DF520FFFC}" WorkUnitID="{1FDE36BB-798D-4C6D-B1ED-8231D2067C25}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Phase_IV_Theme" ID="{EEAFEB69-9D8A-47DB-99CF-1650AC6FBF72}" WorkUnitID="{1FDE36BB-798D-4C6D-B1ED-8231D2067C25}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Title_Theme" ID="{1E6E94BF-9CD5-47DE-BC29-BD39A85BF730}" WorkUnitID="{1FDE36BB-798D-4C6D-B1ED-8231D2067C25}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="SFX" ID="{CB42DC8A-38FD-4A45-AD54-B1AF7A7FF885}" WorkUnitID="{1FDE36BB-798D-4C6D-B1ED-8231D2067C25}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Default Work Unit" ID="{3D1A90AE-AAA0-4AA7-94FB-9239989963B7}" WorkUnitID="{3D1A90AE-AAA0-4AA7-94FB-9239989963B7}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Asteroid_Explode" ID="{19B03CB3-03B8-4BF1-858E-CC1A6B7AA9DA}" WorkUnitID="{1FDE36BB-798D-4C6D-B1ED-8231D2067C25}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Phase_I_Theme" ID="{E5410E4E-E4F0-4CF8-B2B6-DBF4B970C854}" WorkUnitID="{1FDE36BB-798D-4C6D-B1ED-8231D2067C25}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Player_Damage" ID="{28EB0547-3D8A-4F14-B299-C3AE9CD10ECB}" WorkUnitID="{1FDE36BB-798D-4C6D-B1ED-8231D2067C25}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Player_Death" ID="{84EC0627-887E-4F2B-AA60-757CBEBA2917}" WorkUnitID="{1FDE36BB-798D-4C6D-B1ED-8231D2067C25}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundBanks>
 </WwiseDocument>

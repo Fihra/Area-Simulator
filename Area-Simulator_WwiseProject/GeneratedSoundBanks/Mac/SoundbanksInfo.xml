@@ -122,6 +122,52 @@
 					</IncludedMemoryFiles>
 				</Event>
 			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="153341213" Language="SFX">
+					<ShortName>Laser.wav</ShortName>
+					<Path>SFX\Laser_10C4C929.wem</Path>
+				</File>
+				<File Id="309980930" Language="SFX">
+					<ShortName>Phase_II_4-4_160bpm_L16.wav</ShortName>
+					<Path>SFX\Phase_II_4-4_160bpm_L16_D79FB2B7.wem</Path>
+				</File>
+				<File Id="452059209" Language="SFX">
+					<ShortName>Player_Damage.wav</ShortName>
+					<Path>SFX\Player_Damage_10C4C929.wem</Path>
+				</File>
+				<File Id="472603808" Language="SFX">
+					<ShortName>Phase_I_intro_4-4_160bpm_L8.wav</ShortName>
+					<Path>SFX\Phase_I_intro_4-4_160bpm_L8_D79FB2B7.wem</Path>
+				</File>
+				<File Id="506109477" Language="SFX">
+					<ShortName>Phase_IV_4-4_160bpm_L16.wav</ShortName>
+					<Path>SFX\Phase_IV_4-4_160bpm_L16_D79FB2B7.wem</Path>
+				</File>
+				<File Id="524337188" Language="SFX">
+					<ShortName>Title_140bpm_4-4_L16.wav</ShortName>
+					<Path>SFX\Title_140bpm_4-4_L16_D79FB2B7.wem</Path>
+				</File>
+				<File Id="610525599" Language="SFX">
+					<ShortName>Phase_I_4-4_160bpm_L32.wav</ShortName>
+					<Path>SFX\Phase_I_4-4_160bpm_L32_D79FB2B7.wem</Path>
+				</File>
+				<File Id="619328717" Language="SFX">
+					<ShortName>Final_Phase_4-4_160bpm_L37.wav</ShortName>
+					<Path>SFX\Final_Phase_4-4_160bpm_L37_D79FB2B7.wem</Path>
+				</File>
+				<File Id="649578492" Language="SFX">
+					<ShortName>Phase_II_intro_4-4_160bpm_L8.wav</ShortName>
+					<Path>SFX\Phase_II_intro_4-4_160bpm_L8_D79FB2B7.wem</Path>
+				</File>
+				<File Id="869204135" Language="SFX">
+					<ShortName>Phase_III_4-4_160bpm_L12.wav</ShortName>
+					<Path>SFX\Phase_III_4-4_160bpm_L12_D79FB2B7.wem</Path>
+				</File>
+				<File Id="918826630" Language="SFX">
+					<ShortName>Final_Phase_Intro_4-4_160bpm_L8.wav</ShortName>
+					<Path>SFX\Final_Phase_Intro_4-4_160bpm_L8_D79FB2B7.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>
