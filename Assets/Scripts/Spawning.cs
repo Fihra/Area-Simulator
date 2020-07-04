@@ -21,7 +21,7 @@ public class Spawning : MonoBehaviour
 
     void Update()
     {
-        Debug.Log("Enemies in Area: " + enemiesInArea.Count);
+        //Debug.Log("Enemies in Area: " + enemiesInArea.Count);
         if (enemiesInArea.Count <= 0)
         {
             SpawnHorde();

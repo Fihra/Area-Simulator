@@ -1693,6 +1693,7 @@ GameObject:
   m_Component:
   - component: {fileID: 908015095}
   - component: {fileID: 908015094}
+  - component: {fileID: 908015096}
   m_Layer: 0
   m_Name: Wwise
   m_TagString: Untagged
@@ -1707,7 +1708,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 908015093}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 541751d6cdac7364fa392d119bfcdb62, type: 3}
   m_Name: 
@@ -1731,6 +1732,31 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &908015096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 908015093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ba2e390540027248962c637e701938b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentMusic:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: b2be4fd204017c54dbc0d3e225ec45ba,
+      type: 2}
+  titleMusicState:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: a8490a32a74e4ff43bf01618391bb99f,
+      type: 2}
+  levelMusicStates: []
 --- !u!1 &911196342
 GameObject:
   m_ObjectHideFlags: 0

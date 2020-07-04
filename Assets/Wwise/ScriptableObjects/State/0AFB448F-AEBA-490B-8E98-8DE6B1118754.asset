@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f5942eb050a3a44f84bc1e1e4a910a0, type: 3}
+  m_Name: 0AFB448F-AEBA-490B-8E98-8DE6B1118754
+  m_EditorClassIdentifier: 
+  objectName: Level1Theme
+  id: 1757036361
+  guid: 0AFB448F-AEBA-490B-8E98-8DE6B1118754
+  WwiseStateGroupReference: {fileID: 11400000, guid: 9eb83867adb252d4da57103676404b47,
+    type: 2}

@@ -14,13 +14,13 @@ public class MainMenu : MonoBehaviour
 
     public void QuitGame()
     {
-        Debug.Log("Quit");
+        //Debug.Log("Quit");
         Application.Quit();
     }
 
     void Update()
     {
-        Debug.Log(instructionsPage.activeInHierarchy == true);
+        //Debug.Log(instructionsPage.activeInHierarchy == true);
         if (instructionsPage.activeInHierarchy == true && Input.GetKeyDown("space"))
         {
             PlayGame();

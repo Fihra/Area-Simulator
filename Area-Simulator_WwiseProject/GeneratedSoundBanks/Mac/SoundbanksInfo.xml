@@ -37,7 +37,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="4291438327" Name="Final_Phase" ObjectPath="\Events\Default Work Unit\Music\Final_Phase" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+				<Event Id="4291438327" Name="Final_Phase" ObjectPath="\Events\Default Work Unit\Music\Final_Phase" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="619328717" Language="SFX">
 							<ShortName>Final_Phase_4-4_160bpm_L37.wav</ShortName>
@@ -57,6 +57,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="3991942870" Name="Music" ObjectPath="\Events\Music\Music" DurationType="Infinite"/>
 				<Event Id="844214104" Name="Phase_I_Theme" ObjectPath="\Events\Default Work Unit\Music\Phase_I_Theme" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="472603808" Language="SFX">
@@ -168,6 +169,19 @@
 					<Path>SFX\Final_Phase_Intro_4-4_160bpm_L8_D79FB2B7.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
+			<StateGroups>
+				<StateGroup Id="2383225044" Name="SceneMusic" ObjectPath="\States\Default Work Unit\SceneMusic">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\SceneMusic\None"/>
+						<State Id="1223337640" Name="TitleTheme" ObjectPath="\States\Default Work Unit\SceneMusic\TitleTheme"/>
+						<State Id="1757036361" Name="Level1Theme" ObjectPath="\States\Default Work Unit\SceneMusic\Level1Theme"/>
+						<State Id="378777064" Name="Level2Theme" ObjectPath="\States\Default Work Unit\SceneMusic\Level2Theme"/>
+						<State Id="98853323" Name="Level3Theme" ObjectPath="\States\Default Work Unit\SceneMusic\Level3Theme"/>
+						<State Id="4194446434" Name="Level4Theme" ObjectPath="\States\Default Work Unit\SceneMusic\Level4Theme"/>
+						<State Id="2644359046" Name="LevelFinalTheme" ObjectPath="\States\Default Work Unit\SceneMusic\LevelFinalTheme"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

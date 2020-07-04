@@ -8,8 +8,21 @@ Event	ID	Name			Wwise Object Path	Notes
 	3083087645	Player_Death			\Default Work Unit\SFX\Player\Player_Death	
 	3259071049	Phase_II_Theme			\Default Work Unit\Music\Phase_II_Theme	
 	3982605422	Laser			\Default Work Unit\SFX\Player\Laser	
+	3991942870	Music			\Music\Music	
 	4179480828	Asteroid_Explode			\Default Work Unit\SFX\Asteroids\Asteroid_Explode	
 	4291438327	Final_Phase			\Default Work Unit\Music\Final_Phase	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	2383225044	SceneMusic			\Default Work Unit\SceneMusic	
+
+State	ID	Name	State Group			Notes
+	98853323	Level3Theme	SceneMusic			
+	378777064	Level2Theme	SceneMusic			
+	748895195	None	SceneMusic			
+	1223337640	TitleTheme	SceneMusic			
+	1757036361	Level1Theme	SceneMusic			
+	2644359046	LevelFinalTheme	SceneMusic			
+	4194446434	Level4Theme	SceneMusic			
 
 Effect plug-ins	ID	Name	Type				Notes
 	1237275451	Octave_Up	Wwise Pitch Shifter			
@@ -19,14 +32,14 @@ Effect plug-ins	ID	Name	Type				Notes
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	153341213	Laser	D:\Fabian_Files\Unity_Files\Area-Simulator\Area-Simulator_WwiseProject\.cache\Mac\SFX\Laser_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Laser		34148
-	309980930	Phase_II_4-4_160bpm_L16	D:\Fabian_Files\Unity_Files\Area-Simulator\Area-Simulator_WwiseProject\.cache\Mac\SFX\Phase_II_4-4_160bpm_L16_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Phase_II\Phase_II_4-4_160bpm_L16\Phase_II_4-4_160bpm_L16		4365964
+	309980930	Phase_II_4-4_160bpm_L16	D:\Fabian_Files\Unity_Files\Area-Simulator\Area-Simulator_WwiseProject\.cache\Mac\SFX\Phase_II_4-4_160bpm_L16_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Scene_Music\Phase_II\Phase_II_4-4_160bpm_L16\Phase_II_4-4_160bpm_L16		4365964
 	452059209	Player_Death	D:\Fabian_Files\Unity_Files\Area-Simulator\Area-Simulator_WwiseProject\.cache\Mac\SFX\Player_Damage_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player_Death		34148
-	472603808	Phase_I_intro_4-4_160bpm_L8	D:\Fabian_Files\Unity_Files\Area-Simulator\Area-Simulator_WwiseProject\.cache\Mac\SFX\Phase_I_intro_4-4_160bpm_L8_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Phase_I\Phase_I_intro_4-4_160bpm_L8\Phase_I_intro_4-4_160bpm_L8		2183012
-	506109477	Phase_IV_4-4_160bpm_L16	D:\Fabian_Files\Unity_Files\Area-Simulator\Area-Simulator_WwiseProject\.cache\Mac\SFX\Phase_IV_4-4_160bpm_L16_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Phase_IV\Phase_IV_4-4_160bpm_L16\Phase_IV_4-4_160bpm_L16		4365964
-	524337188	Title_140bpm_4-4_L16	D:\Fabian_Files\Unity_Files\Area-Simulator\Area-Simulator_WwiseProject\.cache\Mac\SFX\Title_140bpm_4-4_L16_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Title\Title_140bpm_4-4_L16\Title_140bpm_4-4_L16		5090472
-	610525599	Phase_I_4-4_160bpm_L32	D:\Fabian_Files\Unity_Files\Area-Simulator\Area-Simulator_WwiseProject\.cache\Mac\SFX\Phase_I_4-4_160bpm_L32_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Phase_I\Phase_I_4-4_160bpm_L32\Phase_I_4-4_160bpm_L32		8599564
-	619328717	Final_Phase_4-4_160bpm_L37	D:\Fabian_Files\Unity_Files\Area-Simulator\Area-Simulator_WwiseProject\.cache\Mac\SFX\Final_Phase_4-4_160bpm_L37_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Final_Phase\Final_Phase_4-4_160bpm_L37\Final_Phase_4-4_160bpm_L37		10054864
-	649578492	Phase_II_intro_4-4_160bpm_L8	D:\Fabian_Files\Unity_Files\Area-Simulator\Area-Simulator_WwiseProject\.cache\Mac\SFX\Phase_II_intro_4-4_160bpm_L8_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Phase_II\Phase_II_intro_4-4_160bpm_L8\Phase_II_intro_4-4_160bpm_L8		2249164
-	869204135	Phase_III_4-4_160bpm_L12	D:\Fabian_Files\Unity_Files\Area-Simulator\Area-Simulator_WwiseProject\.cache\Mac\SFX\Phase_III_4-4_160bpm_L12_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Phase_III\Phase_III_4-4_160bpm_L12\Phase_III_4-4_160bpm_L12		3307564
-	918826630	Final_Phase_Intro_4-4_160bpm_L8	D:\Fabian_Files\Unity_Files\Area-Simulator\Area-Simulator_WwiseProject\.cache\Mac\SFX\Final_Phase_Intro_4-4_160bpm_L8_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Final_Phase\Final_Phase_Intro_4-4_160bpm_L8\Final_Phase_Intro_4-4_160bpm_L8		2249164
+	472603808	Phase_I_intro_4-4_160bpm_L8	D:\Fabian_Files\Unity_Files\Area-Simulator\Area-Simulator_WwiseProject\.cache\Mac\SFX\Phase_I_intro_4-4_160bpm_L8_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Scene_Music\Phase_I\Phase_I_intro_4-4_160bpm_L8\Phase_I_intro_4-4_160bpm_L8		2183012
+	506109477	Phase_IV_4-4_160bpm_L16	D:\Fabian_Files\Unity_Files\Area-Simulator\Area-Simulator_WwiseProject\.cache\Mac\SFX\Phase_IV_4-4_160bpm_L16_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Scene_Music\Phase_IV\Phase_IV_4-4_160bpm_L16\Phase_IV_4-4_160bpm_L16		4365964
+	524337188	Title_140bpm_4-4_L16	D:\Fabian_Files\Unity_Files\Area-Simulator\Area-Simulator_WwiseProject\.cache\Mac\SFX\Title_140bpm_4-4_L16_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Scene_Music\Title\Title_140bpm_4-4_L16\Title_140bpm_4-4_L16		5090472
+	610525599	Phase_I_4-4_160bpm_L32	D:\Fabian_Files\Unity_Files\Area-Simulator\Area-Simulator_WwiseProject\.cache\Mac\SFX\Phase_I_4-4_160bpm_L32_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Scene_Music\Phase_I\Phase_I_4-4_160bpm_L32\Phase_I_4-4_160bpm_L32		8599564
+	619328717	Final_Phase_4-4_160bpm_L37	D:\Fabian_Files\Unity_Files\Area-Simulator\Area-Simulator_WwiseProject\.cache\Mac\SFX\Final_Phase_4-4_160bpm_L37_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Scene_Music\Final_Phase\Final_Phase_4-4_160bpm_L37\Final_Phase_4-4_160bpm_L37		10054864
+	649578492	Phase_II_intro_4-4_160bpm_L8	D:\Fabian_Files\Unity_Files\Area-Simulator\Area-Simulator_WwiseProject\.cache\Mac\SFX\Phase_II_intro_4-4_160bpm_L8_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Scene_Music\Phase_II\Phase_II_intro_4-4_160bpm_L8\Phase_II_intro_4-4_160bpm_L8		2249164
+	869204135	Phase_III_4-4_160bpm_L12	D:\Fabian_Files\Unity_Files\Area-Simulator\Area-Simulator_WwiseProject\.cache\Mac\SFX\Phase_III_4-4_160bpm_L12_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Scene_Music\Phase_III\Phase_III_4-4_160bpm_L12\Phase_III_4-4_160bpm_L12		3307564
+	918826630	Final_Phase_Intro_4-4_160bpm_L8	D:\Fabian_Files\Unity_Files\Area-Simulator\Area-Simulator_WwiseProject\.cache\Mac\SFX\Final_Phase_Intro_4-4_160bpm_L8_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Scene_Music\Final_Phase\Final_Phase_Intro_4-4_160bpm_L8\Final_Phase_Intro_4-4_160bpm_L8		2249164
 

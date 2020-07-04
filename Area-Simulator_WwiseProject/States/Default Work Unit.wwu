@@ -1,6 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{36812F86-C5DF-459B-998D-51095552AC85}" SchemaVersion="97">
 	<States>
-		<WorkUnit Name="Default Work Unit" ID="{36812F86-C5DF-459B-998D-51095552AC85}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{36812F86-C5DF-459B-998D-51095552AC85}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="SceneMusic" ID="{FD35AC93-923F-4EBA-9AC5-B1F3B48D360B}">
+					<ChildrenList>
+						<State Name="None" ID="{3BB05F5B-14A9-4F21-B72B-EAECF44BA609}"/>
+						<State Name="TitleTheme" ID="{908B22AF-0D16-4F07-8E18-79749BFB0DE6}"/>
+						<State Name="Level1Theme" ID="{0AFB448F-AEBA-490B-8E98-8DE6B1118754}"/>
+						<State Name="Level2Theme" ID="{78DDD480-C1D8-4379-8A08-77E99A1AD592}"/>
+						<State Name="Level3Theme" ID="{6A7EB122-45E7-4168-B1F7-F4F7FA4004CF}"/>
+						<State Name="Level4Theme" ID="{4D7E65C0-C760-462D-85A6-5D97FDA31DB5}"/>
+						<State Name="LevelFinalTheme" ID="{DDADB3D2-2EDB-4647-85DF-C62D96204AA9}"/>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="TitleTheme" ID="{908B22AF-0D16-4F07-8E18-79749BFB0DE6}"/>
+							<EndState Name="Level1Theme" ID="{0AFB448F-AEBA-490B-8E98-8DE6B1118754}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="Level1Theme" ID="{0AFB448F-AEBA-490B-8E98-8DE6B1118754}"/>
+							<EndState Name="Level2Theme" ID="{78DDD480-C1D8-4379-8A08-77E99A1AD592}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="Level2Theme" ID="{78DDD480-C1D8-4379-8A08-77E99A1AD592}"/>
+							<EndState Name="Level3Theme" ID="{6A7EB122-45E7-4168-B1F7-F4F7FA4004CF}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="Level3Theme" ID="{6A7EB122-45E7-4168-B1F7-F4F7FA4004CF}"/>
+							<EndState Name="Level4Theme" ID="{4D7E65C0-C760-462D-85A6-5D97FDA31DB5}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="Level4Theme" ID="{4D7E65C0-C760-462D-85A6-5D97FDA31DB5}"/>
+							<EndState Name="LevelFinalTheme" ID="{DDADB3D2-2EDB-4647-85DF-C62D96204AA9}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</States>
 </WwiseDocument>

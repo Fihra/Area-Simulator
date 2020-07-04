@@ -1189,26 +1189,42 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ba2e390540027248962c637e701938b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelMusic:
+  titleMusicState:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  levelMusicStates:
   - idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 298a414fa76f9264891a3ff776fa0d47,
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 5465e804c006728498d755754f5450c9,
       type: 2}
   - idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: a393b9f7a2cdced4e9060e6d7c1546a0,
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 4ca9f0c9692084347a885cf202259c3b,
       type: 2}
   - idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: ee7766c96eacf26469d478ddf907e702,
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 87492a299d7dbf547b69bbc310b01b80,
       type: 2}
   - idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 480cc03262e95ff4ab7c70c45db96bc7,
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 8701284130d2c4944841a87af11d4891,
       type: 2}
   - idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: bcad052397432314e923ba8c3d64e26a,
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: b0a1d3b2c6640d744a298a07ba7eb5b0,
       type: 2}
 --- !u!4 &1637056966
 Transform:

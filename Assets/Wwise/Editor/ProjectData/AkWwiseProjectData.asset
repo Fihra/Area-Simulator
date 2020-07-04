@@ -56,7 +56,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: bb36de1f8d796d4cb1ed8231d2067c25
     GuidInternal: 
-    m_lastTime: -8586139986108624568
+    m_lastTime: -8586077800401601131
     List:
     - name: Asteroid_Explode
       guid: b33cb019b803f14b858ecc1a6b7aa9da
@@ -298,6 +298,24 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+  - PhysicalPath: Events\Music.wwu
+    ParentPath: Music
+    guid: 55065fcf8839694cbf9147e1b8b091e3
+    GuidInternal: 
+    m_lastTime: -8586077794316786382
+    List:
+    - name: Music
+      guid: 4ee660f1d9d7b74ab09095aa33d828cb
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: Music
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 3
+      Path: Music\Music
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     ParentPath: Default Work Unit
@@ -310,8 +328,63 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 862f8136dfc59b45998d51095552ac85
     GuidInternal: 
-    m_lastTime: -8586141544290112882
-    List: []
+    m_lastTime: -8586077749500377736
+    List:
+    - name: SceneMusic
+      guid: 93ac35fd3f92ba4e9ac5b1f3b48d360b
+      id: 2383225044
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SceneMusic
+        ObjectType: 9
+      Path: Default Work Unit\SceneMusic
+      values:
+      - name: Level1Theme
+        guid: 8f44fb0abaae0b498e988de6b1118754
+        id: 1757036361
+        PathAndIcons:
+        - ElementName: Level1Theme
+          ObjectType: 8
+      - name: Level2Theme
+        guid: 80d4dd78d8c179438a0877e99a1ad592
+        id: 378777064
+        PathAndIcons:
+        - ElementName: Level2Theme
+          ObjectType: 8
+      - name: Level3Theme
+        guid: 22b17e6ae7456841b1f7f4f7fa4004cf
+        id: 98853323
+        PathAndIcons:
+        - ElementName: Level3Theme
+          ObjectType: 8
+      - name: Level4Theme
+        guid: c0657e4d60c72d4685a65d97fda31db5
+        id: 4194446434
+        PathAndIcons:
+        - ElementName: Level4Theme
+          ObjectType: 8
+      - name: LevelFinalTheme
+        guid: d2b3addddb2e474685dfc62d96204aa9
+        id: 2644359046
+        PathAndIcons:
+        - ElementName: LevelFinalTheme
+          ObjectType: 8
+      - name: None
+        guid: 5b5fb03ba914214fb72beaecf44ba609
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: TitleTheme
+        guid: af228b90160d074f8e1879749bfb0de6
+        id: 1223337640
+        PathAndIcons:
+        - ElementName: TitleTheme
+          ObjectType: 8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPath: Default Work Unit
@@ -329,10 +402,7 @@ MonoBehaviour:
   ExpandedItems:
   - /Area-Simulator_WwiseProject
   - /Area-Simulator_WwiseProject/Events
-  - /Area-Simulator_WwiseProject/Events/Default Work Unit
-  - /Area-Simulator_WwiseProject/Events/Default Work Unit/Music
-  - /Area-Simulator_WwiseProject/Events/Default Work Unit/SFX
-  - /Area-Simulator_WwiseProject/Events/Default Work Unit/SFX/Player
+  - /Area-Simulator_WwiseProject/Events/Music
   - /Area-Simulator_WwiseProject/SoundBanks
   - /Area-Simulator_WwiseProject/SoundBanks/Default Work Unit
   autoPopulateEnabled: 1

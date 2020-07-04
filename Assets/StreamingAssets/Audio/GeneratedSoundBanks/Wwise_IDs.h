@@ -17,6 +17,7 @@ namespace AK
         static const AkUniqueID EARTH_DAMAGE = 436641829U;
         static const AkUniqueID FINAL_PHASE = 4291438327U;
         static const AkUniqueID LASER = 3982605422U;
+        static const AkUniqueID MUSIC = 3991942870U;
         static const AkUniqueID PHASE_I_THEME = 844214104U;
         static const AkUniqueID PHASE_II_THEME = 3259071049U;
         static const AkUniqueID PHASE_III_THEME = 674754006U;
@@ -25,6 +26,26 @@ namespace AK
         static const AkUniqueID PLAYER_DEATH = 3083087645U;
         static const AkUniqueID TITLE_THEME = 2521525023U;
     } // namespace EVENTS
+
+    namespace STATES
+    {
+        namespace SCENEMUSIC
+        {
+            static const AkUniqueID GROUP = 2383225044U;
+
+            namespace STATE
+            {
+                static const AkUniqueID LEVEL1THEME = 1757036361U;
+                static const AkUniqueID LEVEL2THEME = 378777064U;
+                static const AkUniqueID LEVEL3THEME = 98853323U;
+                static const AkUniqueID LEVEL4THEME = 4194446434U;
+                static const AkUniqueID LEVELFINALTHEME = 2644359046U;
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID TITLETHEME = 1223337640U;
+            } // namespace STATE
+        } // namespace SCENEMUSIC
+
+    } // namespace STATES
 
     namespace BANKS
     {
