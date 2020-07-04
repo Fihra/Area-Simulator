@@ -10,10 +10,15 @@ public class GameplayMusic : MonoBehaviour
     public AK.Wwise.Event currentMusic;
     public AK.Wwise.State titleMusicState;
 
-    public List<AK.Wwise.State> levelMusicStates = new List<AK.Wwise.State>();
+    enum levels
+    {
+        LEVEL_1 = 20,
+        LEVEL_2 = 30,
+        LEVEL_3 = 40,
+        LEVEL_4 = 50
+    }
 
-    //public List<AK.Wwise.Event> levelMusic = new List<AK.Wwise.Event>();
-    //AK.Wwise.Event currentMusic;
+    public List<AK.Wwise.State> levelMusicStates = new List<AK.Wwise.State>();
 
     void Awake()
     {
@@ -22,26 +27,35 @@ public class GameplayMusic : MonoBehaviour
         Debug.Log(currentScene.name == "SpaceShooter");
         if (currentScene.name == "MainMenu")
         {
-            Debug.Log(titleMusicState);
             titleMusicState.SetValue();
             currentMusic.Post(gameObject);
-            //currentMusic = titleMusic;
-            //PlayTitleMusic();
-            //currentMusic.Post(gameObject);
+
         } 
         else if(currentScene.name == "SpaceShooter")
         {
-            LevelMusic();
-            //currentMusic = levelMusic[0];
-            //LevelMusic();
+            levelMusicStates[0].SetValue();
         }
-
 
     }
 
     void LevelMusic()
     {
-        levelMusicStates[0].SetValue();
+        //Debug.Log("Current score: " + SpacePlayer.score);
+        //Debug.Log(SpacePlayer.score > (int)levels.LEVEL_1);
+        if ((SpacePlayer.score > (int)levels.LEVEL_1) && (SpacePlayer.score < (int)levels.LEVEL_2))
+        {
+            levelMusicStates[1].SetValue();
+        }
+        else if((SpacePlayer.score > (int)levels.LEVEL_2) && (SpacePlayer.score < (int)levels.LEVEL_3))
+        {
+            levelMusicStates[2].SetValue();
+        }
+        else if ((SpacePlayer.score > (int)levels.LEVEL_3) && (SpacePlayer.score < (int)levels.LEVEL_4))
+        {
+            levelMusicStates[3].SetValue();
+        }
+
+
     }
 
     // Start is called before the first frame update
@@ -50,19 +64,10 @@ public class GameplayMusic : MonoBehaviour
         
     }
 
-    //void PlayTitleMusic()
-    //{
-    //    currentMusic.Post(gameObject);
-    //}
-
-    //void LevelMusic()
-    //{
-    //    currentMusic.Post(gameObject);
-    //}
 
     // Update is called once per frame
     void Update()
     {
-        
+        LevelMusic();
     }
 }
