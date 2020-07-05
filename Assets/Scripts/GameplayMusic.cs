@@ -12,10 +12,11 @@ public class GameplayMusic : MonoBehaviour
 
     enum levels
     {
-        LEVEL_1 = 20,
-        LEVEL_2 = 30,
-        LEVEL_3 = 40,
-        LEVEL_4 = 50
+        LEVEL_1 = Spawning.EnemyLevel.LEVEL1,
+        LEVEL_2 = Spawning.EnemyLevel.LEVEL2,
+        LEVEL_3 = Spawning.EnemyLevel.LEVEL3,
+        LEVEL_4 = Spawning.EnemyLevel.LEVEL4,
+        LEVEL_FINAL = Spawning.EnemyLevel.LEVEL5
     }
 
     public List<AK.Wwise.State> levelMusicStates = new List<AK.Wwise.State>();
@@ -24,7 +25,6 @@ public class GameplayMusic : MonoBehaviour
     {
         currentScene = SceneManager.GetActiveScene();
 
-        Debug.Log(currentScene.name == "SpaceShooter");
         if (currentScene.name == "MainMenu")
         {
             titleMusicState.SetValue();
@@ -40,19 +40,48 @@ public class GameplayMusic : MonoBehaviour
 
     void LevelMusic()
     {
-        //Debug.Log("Current score: " + SpacePlayer.score);
-        //Debug.Log(SpacePlayer.score > (int)levels.LEVEL_1);
-        if ((SpacePlayer.score > (int)levels.LEVEL_1) && (SpacePlayer.score < (int)levels.LEVEL_2))
+        //if ((SpacePlayer.score > (int)levels.LEVEL_1) && (SpacePlayer.score < (int)levels.LEVEL_2))
+        //{
+        //    levelMusicStates[1].SetValue();
+        //}
+        //else if((SpacePlayer.score > (int)levels.LEVEL_2) && (SpacePlayer.score < (int)levels.LEVEL_3))
+        //{
+        //    levelMusicStates[2].SetValue();
+        //}
+        //else if ((SpacePlayer.score > (int)levels.LEVEL_3) && (SpacePlayer.score < (int)levels.LEVEL_4))
+        //{
+        //    levelMusicStates[3].SetValue();
+        //}
+
+        switch(SpacePlayer.score)
         {
-            levelMusicStates[1].SetValue();
-        }
-        else if((SpacePlayer.score > (int)levels.LEVEL_2) && (SpacePlayer.score < (int)levels.LEVEL_3))
-        {
-            levelMusicStates[2].SetValue();
-        }
-        else if ((SpacePlayer.score > (int)levels.LEVEL_3) && (SpacePlayer.score < (int)levels.LEVEL_4))
-        {
-            levelMusicStates[3].SetValue();
+           
+            case (int)levels.LEVEL_2:
+                if(SpacePlayer.score <= (int)levels.LEVEL_2)
+                {
+                    levelMusicStates[1].SetValue();
+                }
+                return;
+            case (int)levels.LEVEL_3:
+                if (SpacePlayer.score <= (int)levels.LEVEL_3)
+                {
+                    levelMusicStates[2].SetValue();
+                }
+                return;
+            case (int)levels.LEVEL_4:
+                if (SpacePlayer.score <= (int)levels.LEVEL_4)
+                {
+                    levelMusicStates[3].SetValue();
+                }
+                return;
+            case (int)levels.LEVEL_FINAL:
+                if (SpacePlayer.score <= (int)levels.LEVEL_FINAL)
+                {
+                    levelMusicStates[4].SetValue();
+                }
+                return;
+            default:
+                return;
         }
 
 

@@ -7,19 +7,24 @@ public class EnemyAI : MonoBehaviour
     private Transform myTransform;
 
     public float moveSpeed;
-    public float minSpeed = 1.0f;
-    public float maxSpeed = 3.0f;
+    public static float minSpeed = 1.0f;
+    public static float maxSpeed = 3.0f;
 
     float x;
     float y = 10.0f, z = -1.0f;
 
-    //public GameObject EnemyProjectile;
+    Spawning.EnemyLevel newEnemyLevel;
+    Spawning.EnemyLevel currentEnemyLevel;
 
+    //public GameObject EnemyProjectile;
     //float spawnLocation;
 
     // Start is called before the first frame update
     void Start()
     {
+        newEnemyLevel = Spawning.currentLevel;
+        currentEnemyLevel = newEnemyLevel;
+
         x = Random.Range(-6.20f, 6.20f);
         myTransform = transform;
         myTransform.position = new Vector3(x, y, z);
@@ -35,9 +40,18 @@ public class EnemyAI : MonoBehaviour
         {
             //change current speed
             //change the x axis
+            Debug.Log("CurrentLevel: " + currentEnemyLevel);
+            Debug.Log("newLevel: " + newEnemyLevel);
+            if(currentEnemyLevel != newEnemyLevel)
+            {
+                minSpeed += 0.25f;
+                maxSpeed += 0.25f;
+            }
+
             moveSpeed = Random.Range(minSpeed, maxSpeed);
             x = Random.Range(-6.20f, 6.20f);
             myTransform.position = new Vector3(x, y, z);
+            
             //Destroy(gameObject);
         }
     }
@@ -45,22 +59,20 @@ public class EnemyAI : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         //Debug.Log(other);
-        if (other.gameObject.CompareTag("Projectile"))
+        if (other.gameObject.CompareTag("Projectile") || other.gameObject.CompareTag("Player"))
         {
             //if the laser hits the enemy
             //destroy enemy
-            //Destroy(other.gameObject);
-            //Spawning.enemiesInArea.Remove(other.gameObject);
-            //Debug.Log("Enemies in Area: " + Spawning.enemiesInArea.Count);
+
             Destroy(gameObject);
         }
         
-        if(other.gameObject.CompareTag("Player"))
-        {
-            //Spawning.enemiesInArea.Remove(other.gameObject);
-            //Debug.Log("Enemies in Area: " + Spawning.enemiesInArea.Count);
-            Destroy(gameObject);
-        }
+        //if(other.gameObject.CompareTag("Player"))
+        //{
+        //    //Spawning.enemiesInArea.Remove(other.gameObject);
+        //    //Debug.Log("Enemies in Area: " + Spawning.enemiesInArea.Count);
+        //    Destroy(gameObject);
+        //}
 
     }
 }

@@ -57,7 +57,81 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3991942870" Name="Music" ObjectPath="\Events\Music\Music" DurationType="Infinite"/>
+				<Event Id="3991942870" Name="Music" ObjectPath="\Events\Music\Music" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="309980930" Language="SFX">
+							<ShortName>Phase_II_4-4_160bpm_L16.wav</ShortName>
+							<Path>SFX\Phase_II_4-4_160bpm_L16_D79FB2B7.wem</Path>
+						</File>
+						<File Id="472603808" Language="SFX">
+							<ShortName>Phase_I_intro_4-4_160bpm_L8.wav</ShortName>
+							<Path>SFX\Phase_I_intro_4-4_160bpm_L8_D79FB2B7.wem</Path>
+						</File>
+						<File Id="506109477" Language="SFX">
+							<ShortName>Phase_IV_4-4_160bpm_L16.wav</ShortName>
+							<Path>SFX\Phase_IV_4-4_160bpm_L16_D79FB2B7.wem</Path>
+						</File>
+						<File Id="524337188" Language="SFX">
+							<ShortName>Title_140bpm_4-4_L16.wav</ShortName>
+							<Path>SFX\Title_140bpm_4-4_L16_D79FB2B7.wem</Path>
+						</File>
+						<File Id="610525599" Language="SFX">
+							<ShortName>Phase_I_4-4_160bpm_L32.wav</ShortName>
+							<Path>SFX\Phase_I_4-4_160bpm_L32_D79FB2B7.wem</Path>
+						</File>
+						<File Id="619328717" Language="SFX">
+							<ShortName>Final_Phase_4-4_160bpm_L37.wav</ShortName>
+							<Path>SFX\Final_Phase_4-4_160bpm_L37_D79FB2B7.wem</Path>
+						</File>
+						<File Id="649578492" Language="SFX">
+							<ShortName>Phase_II_intro_4-4_160bpm_L8.wav</ShortName>
+							<Path>SFX\Phase_II_intro_4-4_160bpm_L8_D79FB2B7.wem</Path>
+						</File>
+						<File Id="869204135" Language="SFX">
+							<ShortName>Phase_III_4-4_160bpm_L12.wav</ShortName>
+							<Path>SFX\Phase_III_4-4_160bpm_L12_D79FB2B7.wem</Path>
+						</File>
+						<File Id="918826630" Language="SFX">
+							<ShortName>Final_Phase_Intro_4-4_160bpm_L8.wav</ShortName>
+							<Path>SFX\Final_Phase_Intro_4-4_160bpm_L8_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{908B22AF-0D16-4F07-8E18-79749BFB0DE6}">
+							<Media>
+								<File Id="524337188"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{0AFB448F-AEBA-490B-8E98-8DE6B1118754}">
+							<Media>
+								<File Id="610525599"/>
+								<File Id="472603808"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{78DDD480-C1D8-4379-8A08-77E99A1AD592}">
+							<Media>
+								<File Id="309980930"/>
+								<File Id="649578492"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{6A7EB122-45E7-4168-B1F7-F4F7FA4004CF}">
+							<Media>
+								<File Id="869204135"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{4D7E65C0-C760-462D-85A6-5D97FDA31DB5}">
+							<Media>
+								<File Id="506109477"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{DDADB3D2-2EDB-4647-85DF-C62D96204AA9}">
+							<Media>
+								<File Id="619328717"/>
+								<File Id="918826630"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
 				<Event Id="844214104" Name="Phase_I_Theme" ObjectPath="\Events\Default Work Unit\Music\Phase_I_Theme" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="472603808" Language="SFX">

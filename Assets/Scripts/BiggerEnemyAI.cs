@@ -57,7 +57,6 @@ public class BiggerEnemyAI : MonoBehaviour
             {
                 SpacePlayer.score += 3;
                 Spawning.enemiesInArea.Remove(gameObject);
-                //Debug.Log("Enemies in Area: " + Spawning.enemiesInArea.Count);
                 Destroy(gameObject);
             }
             
