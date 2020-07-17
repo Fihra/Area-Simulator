@@ -9,7 +9,7 @@ public class SpacePlayer : MonoBehaviour
     public int playerSpeed = 5;
     
     public static int playerHealth = 10;
-    public static int score = 0;
+    public static int score = 190;
 
     float shipBoundary = 0.5f;
 

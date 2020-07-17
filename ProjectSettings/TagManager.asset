@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - BiggerEnemy
   - Earth
+  - Boss
   layers:
   - Default
   - TransparentFX

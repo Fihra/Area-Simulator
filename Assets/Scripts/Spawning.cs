@@ -7,6 +7,10 @@ public class Spawning : MonoBehaviour
     public List <GameObject> enemies;
     public Transform spawnLocation;
 
+    public GameObject Boss;
+    bool isBossAppeared = false;
+    public Transform BossTransform;
+
     public int enemyCount = 3;
     public int bigEnemyCount = 3;
     public int hordeMultiplier = 1;
@@ -28,9 +32,14 @@ public class Spawning : MonoBehaviour
 
     public static List<GameObject> enemiesInArea = new List<GameObject>();
 
+    private void Awake()
+    {
+        Boss.SetActive(false);
+    }
+
     void Update()
     {
-        Debug.Log("Enemies in Area: " + enemiesInArea.Count);
+        //Debug.Log("Enemies in Area: " + enemiesInArea.Count);
         if (enemiesInArea.Count <= 0)
         {
             SpawnHorde();
@@ -61,9 +70,18 @@ public class Spawning : MonoBehaviour
         }
     }
 
+    
+    public void BossEncounter()
+    {
+        Debug.Log(Boss);
+        Vector3 BossSpawn = new Vector3(0.0f, 2.5f, -1.0f);
+        Boss = Instantiate(Boss, BossSpawn, Quaternion.identity);
+
+    }
+
     public void SpawnHorde()
     {
-        Debug.Log(currentLevel);
+        //Debug.Log(currentLevel);
         switch (currentLevel)
         {
             case EnemyLevel.LEVEL1:
@@ -106,6 +124,14 @@ public class Spawning : MonoBehaviour
                 hordeMultiplier++;
                 EnemiesLevel1And2();
                 EnemiesLevel4();
+                return;
+            case EnemyLevel.LEVEL5:
+                if(!Boss.activeSelf)
+                {
+                    Boss.SetActive(true);
+                    BossEncounter();
+                }
+                
                 return;
             default:
                 return;
