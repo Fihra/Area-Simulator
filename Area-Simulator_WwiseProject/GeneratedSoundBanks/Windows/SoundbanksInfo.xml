@@ -91,6 +91,10 @@
 							<ShortName>Title_140bpm_4-4_L16.wav</ShortName>
 							<Path>SFX\Title_140bpm_4-4_L16_D79FB2B7.wem</Path>
 						</File>
+						<File Id="586374565" Language="SFX">
+							<ShortName>Phase_IV_Theme_B_4-4_160bpm_L33.wav</ShortName>
+							<Path>SFX\Phase_IV_Theme_B_4-4_160bpm_L33_D79FB2B7.wem</Path>
+						</File>
 						<File Id="610525599" Language="SFX">
 							<ShortName>Phase_I_4-4_160bpm_L32.wav</ShortName>
 							<Path>SFX\Phase_I_4-4_160bpm_L32_D79FB2B7.wem</Path>
@@ -138,6 +142,7 @@
 						<SwitchContainer SwitchValue="{4D7E65C0-C760-462D-85A6-5D97FDA31DB5}">
 							<Media>
 								<File Id="506109477"/>
+								<File Id="586374565"/>
 							</Media>
 						</SwitchContainer>
 						<SwitchContainer SwitchValue="{DDADB3D2-2EDB-4647-85DF-C62D96204AA9}">
@@ -185,6 +190,10 @@
 						<File Id="506109477" Language="SFX">
 							<ShortName>Phase_IV_4-4_160bpm_L16.wav</ShortName>
 							<Path>SFX\Phase_IV_4-4_160bpm_L16_D79FB2B7.wem</Path>
+						</File>
+						<File Id="586374565" Language="SFX">
+							<ShortName>Phase_IV_Theme_B_4-4_160bpm_L33.wav</ShortName>
+							<Path>SFX\Phase_IV_Theme_B_4-4_160bpm_L33_D79FB2B7.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -261,6 +270,10 @@
 				<File Id="524337188" Language="SFX">
 					<ShortName>Title_140bpm_4-4_L16.wav</ShortName>
 					<Path>SFX\Title_140bpm_4-4_L16_D79FB2B7.wem</Path>
+				</File>
+				<File Id="586374565" Language="SFX">
+					<ShortName>Phase_IV_Theme_B_4-4_160bpm_L33.wav</ShortName>
+					<Path>SFX\Phase_IV_Theme_B_4-4_160bpm_L33_D79FB2B7.wem</Path>
 				</File>
 				<File Id="610525599" Language="SFX">
 					<ShortName>Phase_I_4-4_160bpm_L32.wav</ShortName>
