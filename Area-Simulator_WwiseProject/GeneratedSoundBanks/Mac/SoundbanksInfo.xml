@@ -29,7 +29,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2702665213" Name="Big_Asteroid_Explode" ObjectPath="\Events\Default Work Unit\SFX\Asteroids\Big_Asteroid_Explode" DurationType="OneShot" DurationMin="1.144635" DurationMax="1.284809">
+				<Event Id="2702665213" Name="Big_Asteroid_Explode" ObjectPath="\Events\Default Work Unit\SFX\Asteroids\Big_Asteroid_Explode" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="1.144635" DurationMax="1.284809">
 					<IncludedMemoryFiles>
 						<File Id="710243048" Language="SFX">
 							<ShortName>Big_Asteroid_Explode.wav</ShortName>
@@ -213,7 +213,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2458003272" Name="Small_Asteroid_Explode" ObjectPath="\Events\Default Work Unit\SFX\Asteroids\Small_Asteroid_Explode" DurationType="OneShot" DurationMin="0.700416" DurationMax="0.832940">
+				<Event Id="2458003272" Name="Small_Asteroid_Explode" ObjectPath="\Events\Default Work Unit\SFX\Asteroids\Small_Asteroid_Explode" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.700416" DurationMax="0.832940">
 					<IncludedMemoryFiles>
 						<File Id="78905162" Language="SFX">
 							<ShortName>Small_Asteroid_Explode.wav</ShortName>

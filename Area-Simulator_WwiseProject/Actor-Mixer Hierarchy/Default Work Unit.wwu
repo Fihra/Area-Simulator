@@ -193,6 +193,9 @@
 							</ChildrenList>
 						</RandomSequenceContainer>
 						<Sound Name="Laser_Ver2" ID="{FCCD08B8-0BE2-4501-BA8A-A6953F1FC251}" ShortID="310618218">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{87131A99-EC57-4132-8857-4487BE126524}"/>
@@ -460,9 +463,13 @@
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="Big_Asteroid_Explode" ID="{F3A5460C-70BB-4ACE-A0C3-382D49531178}" ShortID="286248745">
 							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Asteroid_Attenuation" ID="{A8FF6BA8-BC49-48BA-873E-322548464E48}" WorkUnitID="{A8416FFC-B32E-4A39-8A2D-3812C588F299}"/>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{87131A99-EC57-4132-8857-4487BE126524}"/>
 								</Reference>
@@ -613,9 +620,13 @@
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="Small_Asteroid_Explode" ID="{37937872-0821-430E-AAA7-2A9EE14DBED3}" ShortID="553395359">
 							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Asteroid_Attenuation" ID="{A8FF6BA8-BC49-48BA-873E-322548464E48}" WorkUnitID="{A8416FFC-B32E-4A39-8A2D-3812C588F299}"/>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{87131A99-EC57-4132-8857-4487BE126524}"/>
 								</Reference>
