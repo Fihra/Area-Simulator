@@ -14,9 +14,11 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID ASTEROID_EXPLODE = 4179480828U;
+        static const AkUniqueID BIG_ASTEROID_EXPLODE = 2702665213U;
         static const AkUniqueID EARTH_DAMAGE = 436641829U;
         static const AkUniqueID FINAL_PHASE = 4291438327U;
         static const AkUniqueID LASER = 3982605422U;
+        static const AkUniqueID LASER_VER2 = 1010562506U;
         static const AkUniqueID MUSIC = 3991942870U;
         static const AkUniqueID PHASE_I_THEME = 844214104U;
         static const AkUniqueID PHASE_II_THEME = 3259071049U;
@@ -24,6 +26,7 @@ namespace AK
         static const AkUniqueID PHASE_IV_THEME = 2394473770U;
         static const AkUniqueID PLAYER_DAMAGE = 2074073782U;
         static const AkUniqueID PLAYER_DEATH = 3083087645U;
+        static const AkUniqueID SMALL_ASTEROID_EXPLODE = 2458003272U;
         static const AkUniqueID TITLE_THEME = 2521525023U;
     } // namespace EVENTS
 

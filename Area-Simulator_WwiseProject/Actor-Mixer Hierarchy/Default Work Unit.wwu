@@ -103,7 +103,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{87131A99-EC57-4132-8857-4487BE126524}"/>
+									<ObjectRef Name="SFX" ID="{DB0560C0-D04C-49CF-82B2-9E4BDB54A27A}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{766E8AB5-9D4A-4BA7-B549-16BEF11B06B3}"/>
@@ -131,7 +131,7 @@
 											<Language>SFX</Language>
 											<AudioFile>Player_Damage.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="452059209"/>
+												<MediaID ID="449000811"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
@@ -153,7 +153,7 @@
 											<Language>SFX</Language>
 											<AudioFile>Player_Damage.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="452059209"/>
+												<MediaID ID="449000811"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
@@ -182,7 +182,7 @@
 											<Language>SFX</Language>
 											<AudioFile>Player_Damage.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="452059209"/>
+												<MediaID ID="449000811"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
@@ -192,6 +192,50 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
+						<Sound Name="Laser_Ver2" ID="{FCCD08B8-0BE2-4501-BA8A-A6953F1FC251}" ShortID="310618218">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{87131A99-EC57-4132-8857-4487BE126524}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{766E8AB5-9D4A-4BA7-B549-16BEF11B06B3}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Laser_Ver2" ID="{C3E39646-DDD4-4D25-8F20-175B3E988E8E}">
+									<Language>SFX</Language>
+									<AudioFile>Laser_Ver2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="323008676"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Laser_Ver2" ID="{C3E39646-DDD4-4D25-8F20-175B3E988E8E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Player_Dies" ID="{823CC9E1-FCB8-4426-B991-2ED705CB1277}" ShortID="1014147255">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{87131A99-EC57-4132-8857-4487BE126524}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{766E8AB5-9D4A-4BA7-B549-16BEF11B06B3}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Player_Dies" ID="{839D589A-7B11-4A33-B62C-FDDDD8E4CFD6}">
+									<Language>SFX</Language>
+									<AudioFile>Player_Dies.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="222527059"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Player_Dies" ID="{839D589A-7B11-4A33-B62C-FDDDD8E4CFD6}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Asteroids" ID="{09879406-A301-4B47-9F52-600F2B42209E}" ShortID="636806169">
@@ -410,6 +454,312 @@
 									</ChildrenList>
 									<ActiveSourceList>
 										<ActiveSource Name="Player_Damage" ID="{4C0FCAAD-8040-4086-8A31-D4BE7EBFE651}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Big_Asteroid_Explode" ID="{F3A5460C-70BB-4ACE-A0C3-382D49531178}" ShortID="286248745">
+							<PropertyList>
+								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{87131A99-EC57-4132-8857-4487BE126524}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{766E8AB5-9D4A-4BA7-B549-16BEF11B06B3}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Big_Asteroid_Explode" ID="{B34D0C36-DE24-4EA7-B924-97E13F792BED}" ShortID="254029901">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{87131A99-EC57-4132-8857-4487BE126524}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{766E8AB5-9D4A-4BA7-B549-16BEF11B06B3}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Big_Asteroid_Explode" ID="{783D5772-25D2-42B9-A56E-E26EFB3C4D20}">
+											<Language>SFX</Language>
+											<AudioFile>Big_Asteroid_Explode.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="710243048"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Big_Asteroid_Explode" ID="{783D5772-25D2-42B9-A56E-E26EFB3C4D20}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Big_Asteroid_Explode_01" ID="{944D98D4-2B3D-4D30-BAAC-2749DDE5D8D6}" ShortID="311174913">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-80</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{87131A99-EC57-4132-8857-4487BE126524}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{766E8AB5-9D4A-4BA7-B549-16BEF11B06B3}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Big_Asteroid_Explode" ID="{82BB03FE-F158-4A78-9FC1-C0A8E9B1E31C}">
+											<Language>SFX</Language>
+											<AudioFile>Big_Asteroid_Explode.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="710243048"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Big_Asteroid_Explode" ID="{82BB03FE-F158-4A78-9FC1-C0A8E9B1E31C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Big_Asteroid_Explode_02" ID="{1CEFACE7-EEF3-4F35-8ECF-CA1F959CCE71}" ShortID="41721406">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-100</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{87131A99-EC57-4132-8857-4487BE126524}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{766E8AB5-9D4A-4BA7-B549-16BEF11B06B3}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Big_Asteroid_Explode" ID="{130A8532-2482-4041-A76A-7708BF1319A8}">
+											<Language>SFX</Language>
+											<AudioFile>Big_Asteroid_Explode.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="710243048"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Big_Asteroid_Explode" ID="{130A8532-2482-4041-A76A-7708BF1319A8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Big_Asteroid_Explode_03" ID="{A1BA2701-CDDB-4FBC-8170-8109BFB10E7D}" ShortID="910835789">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>50</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{87131A99-EC57-4132-8857-4487BE126524}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{766E8AB5-9D4A-4BA7-B549-16BEF11B06B3}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Big_Asteroid_Explode" ID="{49D1B17A-281E-4A7D-A007-A21D70CD0FBC}">
+											<Language>SFX</Language>
+											<AudioFile>Big_Asteroid_Explode.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="710243048"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Big_Asteroid_Explode" ID="{49D1B17A-281E-4A7D-A007-A21D70CD0FBC}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Big_Asteroid_Explode_04" ID="{B1B22378-99DC-4188-B16B-6782B633DC60}" ShortID="279463937">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>100</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{87131A99-EC57-4132-8857-4487BE126524}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{766E8AB5-9D4A-4BA7-B549-16BEF11B06B3}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Big_Asteroid_Explode" ID="{E0938115-365F-479C-A564-E44DAB16CEFB}">
+											<Language>SFX</Language>
+											<AudioFile>Big_Asteroid_Explode.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="710243048"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Big_Asteroid_Explode" ID="{E0938115-365F-479C-A564-E44DAB16CEFB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Small_Asteroid_Explode" ID="{37937872-0821-430E-AAA7-2A9EE14DBED3}" ShortID="553395359">
+							<PropertyList>
+								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{87131A99-EC57-4132-8857-4487BE126524}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{766E8AB5-9D4A-4BA7-B549-16BEF11B06B3}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Small_Asteroid_Explode" ID="{7FA6819E-F008-4AB9-B321-E8C2F03912E3}" ShortID="1044650320">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{87131A99-EC57-4132-8857-4487BE126524}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{766E8AB5-9D4A-4BA7-B549-16BEF11B06B3}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Small_Asteroid_Explode" ID="{9D87743E-C19C-42F1-BB09-61C9C3C443C3}">
+											<Language>SFX</Language>
+											<AudioFile>Small_Asteroid_Explode.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="78905162"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Small_Asteroid_Explode" ID="{9D87743E-C19C-42F1-BB09-61C9C3C443C3}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Small_Asteroid_Explode_01" ID="{F56FFC05-4E7F-4725-9023-5E47DC637C9F}" ShortID="521901693">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-80</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{87131A99-EC57-4132-8857-4487BE126524}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{766E8AB5-9D4A-4BA7-B549-16BEF11B06B3}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Small_Asteroid_Explode" ID="{C5AE88CE-2275-46C9-B822-CE77E88425C0}">
+											<Language>SFX</Language>
+											<AudioFile>Small_Asteroid_Explode.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="78905162"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Small_Asteroid_Explode" ID="{C5AE88CE-2275-46C9-B822-CE77E88425C0}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Small_Asteroid_Explode_02" ID="{FD4ADA38-49D1-4B3A-9742-9F9C2459F034}" ShortID="662171318">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-150</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{87131A99-EC57-4132-8857-4487BE126524}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{766E8AB5-9D4A-4BA7-B549-16BEF11B06B3}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Small_Asteroid_Explode" ID="{FB65D0FC-5ADF-486B-8A08-223D10AB4391}">
+											<Language>SFX</Language>
+											<AudioFile>Small_Asteroid_Explode.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="78905162"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Small_Asteroid_Explode" ID="{FB65D0FC-5ADF-486B-8A08-223D10AB4391}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Small_Asteroid_Explode_03" ID="{0571FABF-03D6-4972-8459-AC6CCCC8C5F9}" ShortID="465916293">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>100</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{87131A99-EC57-4132-8857-4487BE126524}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{766E8AB5-9D4A-4BA7-B549-16BEF11B06B3}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Small_Asteroid_Explode" ID="{EBA8711E-E5CA-4878-8318-79BA17719701}">
+											<Language>SFX</Language>
+											<AudioFile>Small_Asteroid_Explode.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="78905162"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Small_Asteroid_Explode" ID="{EBA8711E-E5CA-4878-8318-79BA17719701}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Small_Asteroid_Explode_04" ID="{11F60326-0195-41A1-BC1F-912C36E54A28}" ShortID="633576456">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>150</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{87131A99-EC57-4132-8857-4487BE126524}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{766E8AB5-9D4A-4BA7-B549-16BEF11B06B3}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Small_Asteroid_Explode" ID="{1F8B2EA1-A391-49EC-8D8B-BDCA9D84ECF5}">
+											<Language>SFX</Language>
+											<AudioFile>Small_Asteroid_Explode.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="78905162"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Small_Asteroid_Explode" ID="{1F8B2EA1-A391-49EC-8D8B-BDCA9D84ECF5}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>

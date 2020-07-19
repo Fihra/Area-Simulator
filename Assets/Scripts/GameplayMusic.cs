@@ -53,36 +53,56 @@ public class GameplayMusic : MonoBehaviour
         //    levelMusicStates[3].SetValue();
         //}
 
-        switch(SpacePlayer.score)
+        Spawning.EnemyLevel playing_level = Spawning.currentLevel;
+
+        switch((int)playing_level)
         {
-           
-            case (int)levels.LEVEL_2:
-                if(SpacePlayer.score <= (int)levels.LEVEL_2)
-                {
-                    levelMusicStates[1].SetValue();
-                }
+            case ((int)levels.LEVEL_2):
+                levelMusicStates[1].SetValue();
                 return;
-            case (int)levels.LEVEL_3:
-                if (SpacePlayer.score <= (int)levels.LEVEL_3)
-                {
-                    levelMusicStates[2].SetValue();
-                }
+            case ((int)levels.LEVEL_3):
+                levelMusicStates[2].SetValue();
                 return;
-            case (int)levels.LEVEL_4:
-                if (SpacePlayer.score <= (int)levels.LEVEL_4)
-                {
-                    levelMusicStates[3].SetValue();
-                }
+            case ((int)levels.LEVEL_4):
+                levelMusicStates[3].SetValue();
                 return;
-            case (int)levels.LEVEL_FINAL:
-                if (SpacePlayer.score <= (int)levels.LEVEL_FINAL)
-                {
-                    levelMusicStates[4].SetValue();
-                }
+            case ((int)levels.LEVEL_FINAL):
+                levelMusicStates[4].SetValue();
                 return;
             default:
                 return;
         }
+
+        //switch(SpacePlayer.score)
+        //{
+           
+        //    case (int)levels.LEVEL_2:
+        //        if(SpacePlayer.score >= (int)levels.LEVEL_2)
+        //        {
+        //            levelMusicStates[1].SetValue();
+        //        }
+        //        return;
+        //    case (int)levels.LEVEL_3:
+        //        if (SpacePlayer.score >= (int)levels.LEVEL_3)
+        //        {
+        //            levelMusicStates[2].SetValue();
+        //        }
+        //        return;
+        //    case (int)levels.LEVEL_4:
+        //        if (SpacePlayer.score >= (int)levels.LEVEL_4)
+        //        {
+        //            levelMusicStates[3].SetValue();
+        //        }
+        //        return;
+        //    case (int)levels.LEVEL_FINAL:
+        //        if (SpacePlayer.score >= (int)levels.LEVEL_FINAL && Spawning.enemiesInArea.Count == 0)
+        //        {
+        //            levelMusicStates[4].SetValue();
+        //        }
+        //        return;
+        //    default:
+        //        return;
+        //}
 
 
     }

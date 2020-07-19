@@ -1577,7 +1577,7 @@ MonoBehaviour:
   playerShoot:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 449f77ff8a97e944793362ed6c624682,
+    WwiseObjectReference: {fileID: 11400000, guid: 280ac54cdcc4cb7448f3d5dacbd08bf3,
       type: 2}
   playerDamage:
     idInternal: 0

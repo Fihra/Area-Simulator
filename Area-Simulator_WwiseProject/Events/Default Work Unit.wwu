@@ -104,7 +104,7 @@
 										<Action Name="" ID="{3BF42E59-0A28-45D9-87C4-1AFCEBA82BBF}" ShortID="46518361">
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="Player_Death" ID="{B5D0ECBA-9787-4AF5-8FF7-D26DA7FD5CF3}" WorkUnitID="{3D1A90AE-AAA0-4AA7-94FB-9239989963B7}"/>
+													<ObjectRef Name="Player_Dies" ID="{823CC9E1-FCB8-4426-B991-2ED705CB1277}" WorkUnitID="{3D1A90AE-AAA0-4AA7-94FB-9239989963B7}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -121,6 +121,17 @@
 										</Action>
 									</ChildrenList>
 								</Event>
+								<Event Name="Laser_Ver2" ID="{D8E623A8-ACB0-46CF-B205-5CFE239B3D1F}">
+									<ChildrenList>
+										<Action Name="" ID="{0FD969BD-89A8-4DB9-A6A4-F8D2AE473F44}" ShortID="1015239506">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Laser_Ver2" ID="{FCCD08B8-0BE2-4501-BA8A-A6953F1FC251}" WorkUnitID="{3D1A90AE-AAA0-4AA7-94FB-9239989963B7}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="Asteroids" ID="{FF9032D1-2027-4E52-A154-7F583307409C}" ShortID="239284184">
@@ -131,6 +142,28 @@
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="Asteroid_Explode" ID="{8145852D-552E-429C-A4C1-2606A49E9FB4}" WorkUnitID="{3D1A90AE-AAA0-4AA7-94FB-9239989963B7}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Small_Asteroid_Explode" ID="{2B5DACEF-95E0-4F81-8F43-9F96B398C199}">
+									<ChildrenList>
+										<Action Name="" ID="{0604106D-B78D-444F-B50A-7CC00CD61B6D}" ShortID="445910978">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Small_Asteroid_Explode" ID="{37937872-0821-430E-AAA7-2A9EE14DBED3}" WorkUnitID="{3D1A90AE-AAA0-4AA7-94FB-9239989963B7}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Big_Asteroid_Explode" ID="{CFD3952F-F0B9-4C25-82E1-A0D6D01C81CB}">
+									<ChildrenList>
+										<Action Name="" ID="{3E402C99-51C5-4ED0-983F-25AC0CA6727E}" ShortID="357973095">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Big_Asteroid_Explode" ID="{F3A5460C-70BB-4ACE-A0C3-382D49531178}" WorkUnitID="{3D1A90AE-AAA0-4AA7-94FB-9239989963B7}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>

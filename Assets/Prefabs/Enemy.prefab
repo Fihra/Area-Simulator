@@ -92,7 +92,7 @@ MonoBehaviour:
   asteroidExplode:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 6fb85cb3986927b41b5a312fef0d0eea,
+    WwiseObjectReference: {fileID: 11400000, guid: cda2bb899c3154f47b78c9d203e3c219,
       type: 2}
 --- !u!212 &6748064832764241833
 SpriteRenderer:

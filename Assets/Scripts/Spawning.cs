@@ -114,7 +114,7 @@ public class Spawning : MonoBehaviour
                 EnemiesLevel3();
                 return;
             case EnemyLevel.LEVEL4:
-                if (SpacePlayer.score >= (int)EnemyLevel.LEVEL5)
+                if (SpacePlayer.score >= (int)EnemyLevel.LEVEL5 && enemiesInArea.Count == 0)
                 {
                     currentLevel = EnemyLevel.LEVEL5;
                     return;
