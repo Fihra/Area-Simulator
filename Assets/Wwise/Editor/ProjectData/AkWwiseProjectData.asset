@@ -40,7 +40,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: b9c6da0469b25747b78467067ff884d7
     GuidInternal: 
-    m_lastTime: -8586077176169617693
+    m_lastTime: -8586064086324152380
     List:
     - name: Main
       guid: 4f3e668c6f4efb40b5fa2aad3ac41d25
@@ -103,7 +103,7 @@ MonoBehaviour:
       - ElementName: Big_Asteroid_Explode
         ObjectType: 3
       Path: Default Work Unit\SFX\Asteroids\Big_Asteroid_Explode
-      maxAttenuation: 0
+      maxAttenuation: 10
       maxDuration: 1.284809
       minDuration: 1.144635
     - name: Earth_Damage
@@ -313,7 +313,7 @@ MonoBehaviour:
       - ElementName: Small_Asteroid_Explode
         ObjectType: 3
       Path: Default Work Unit\SFX\Asteroids\Small_Asteroid_Explode
-      maxAttenuation: 0
+      maxAttenuation: 10
       maxDuration: 0.83294
       minDuration: 0.700416
     - name: Title_Theme

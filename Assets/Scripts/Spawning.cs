@@ -73,8 +73,8 @@ public class Spawning : MonoBehaviour
     
     public void BossEncounter()
     {
-        Debug.Log(Boss);
-        Vector3 BossSpawn = new Vector3(0.0f, 2.5f, -1.0f);
+        //Debug.Log(Boss);
+        Vector3 BossSpawn = new Vector3(0.0f, 10.0f, -1.0f);
         Boss = Instantiate(Boss, BossSpawn, Quaternion.identity);
 
     }
