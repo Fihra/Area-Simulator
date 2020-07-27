@@ -23,6 +23,14 @@ public class Boss : MonoBehaviour
     Transform playerTarget;
     Rigidbody2D rb;
 
+    float timer;
+    float cooldown = 3;
+    bool attackActive = false;
+
+    enum BossAttacks {Small = 0, Big = 1, Both = 2};
+
+    int chooseAttack = 0;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -47,24 +55,27 @@ public class Boss : MonoBehaviour
 
     void SmallAsteroidAttack()
     {
+        anim.SetBool("isLeftHand", true);
+        
 
     }
 
     void BigAsteroidAttack()
     {
+        anim.SetBool("isRightHand", true);
+        
 
     }
 
     void DeflectAsteroidAttack()
     {
+        anim.SetBool("isBothHands", true);
+        
 
     }
 
     void MoveBoss()
     {
-        //Vector3 targetPosition = new Vector3(playerTarget.position.x, transform.position.y, transform.position.z);
-
-        //transform.position = Vector3.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
 
         Vector2 target;
 
@@ -78,24 +89,62 @@ public class Boss : MonoBehaviour
         }
 
         
-        //Vector2 newPos = Vector2.MoveTowards(rb.position, target, moveSpeed * Time.deltaTime);
-        //rb.MovePosition(newPos);
-        Debug.Log(rb);
-        Debug.Log(target);
         Vector2 newPos = Vector2.MoveTowards(rb.position, target, moveSpeed * Time.deltaTime);
-        //rb.velocity = newPos;
         rb.MovePosition(newPos);
     }
 
+    void RandomAttack()
+    {
+        int rand = Random.Range(0, 3);
+        Debug.Log(timer);
 
-    // Update is called once per frame
+        while(rand == chooseAttack)
+        {
+            rand = Random.Range(0, 3);
+        }
+        chooseAttack = rand;
+
+        if (!attackActive && timer <= 0)
+        {
+            timer = cooldown;
+
+            attackActive = true;
+            switch (chooseAttack)
+            {
+                case (int)BossAttacks.Small:
+                    SmallAsteroidAttack();
+                    return;
+                case (int)BossAttacks.Big:
+                    BigAsteroidAttack();
+                    return;
+                case (int)BossAttacks.Both:
+                    DeflectAsteroidAttack();
+                    return;
+                default:
+                    return;
+            }
+            
+        }
+        if(attackActive)
+        {
+            if(timer > 0)
+            {
+                timer -= Time.deltaTime;
+            }
+            else
+            {
+                attackActive = false;
+                anim.SetBool("isLeftHand", false);
+                anim.SetBool("isRightHand", false);
+                anim.SetBool("isBothHands", false);
+            }
+            
+        }
+    }
+
     void Update()
     {
         MoveBoss();
-        //anim.SetBool("isMoving", true);
-
-
-
+        RandomAttack();
     }
-
 }

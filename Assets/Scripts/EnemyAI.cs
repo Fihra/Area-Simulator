@@ -19,7 +19,6 @@ public class EnemyAI : MonoBehaviour
     //public GameObject EnemyProjectile;
     //float spawnLocation;
 
-    // Start is called before the first frame update
     void Start()
     {
         newEnemyLevel = Spawning.currentLevel;
@@ -31,7 +30,6 @@ public class EnemyAI : MonoBehaviour
         moveSpeed = Random.Range(minSpeed, maxSpeed);
     }
 
-    // Update is called once per frame
     void Update()
     {
         myTransform.Translate(Vector3.down * moveSpeed * Time.deltaTime);
@@ -40,8 +38,8 @@ public class EnemyAI : MonoBehaviour
         {
             //change current speed
             //change the x axis
-            Debug.Log("CurrentLevel: " + currentEnemyLevel);
-            Debug.Log("newLevel: " + newEnemyLevel);
+            //Debug.Log("CurrentLevel: " + currentEnemyLevel);
+            //Debug.Log("newLevel: " + newEnemyLevel);
             if(currentEnemyLevel != newEnemyLevel)
             {
                 minSpeed += 0.25f;
@@ -58,21 +56,11 @@ public class EnemyAI : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        //Debug.Log(other);
         if (other.gameObject.CompareTag("Projectile") || other.gameObject.CompareTag("Player"))
         {
             //if the laser hits the enemy
             //destroy enemy
-
             Destroy(gameObject);
         }
-        
-        //if(other.gameObject.CompareTag("Player"))
-        //{
-        //    //Spawning.enemiesInArea.Remove(other.gameObject);
-        //    //Debug.Log("Enemies in Area: " + Spawning.enemiesInArea.Count);
-        //    Destroy(gameObject);
-        //}
-
     }
 }
