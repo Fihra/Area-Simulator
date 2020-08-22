@@ -20,6 +20,8 @@ public class Boss : MonoBehaviour
     public GameObject SmallAsteroid;
     public GameObject BigAsteroid;
 
+    public AK.Wwise.Event Ouchies;
+
     Transform playerTarget;
     Rigidbody2D rb;
 
@@ -56,15 +58,35 @@ public class Boss : MonoBehaviour
     void SmallAsteroidAttack()
     {
         anim.SetBool("isLeftHand", true);
-        
+        Debug.Log("Smol Atk");
+        //Vector3 currentPosition = new Vector3(myTransform.position.x, myTransform.position.y, myTransform.position.z);
+        Vector3 currentPosition = myTransform.GetChild(0).localPosition;
+        Debug.Log(currentPosition);
+        //for(int i=0; i < SmallAsteroids.Length; i++)
+        //{
+        //    if (i >= 4)
+        //    {
+
+        //    }
+        //    else
+        //    {
+        //        Instantiate(SmallAsteroids[i], currentPosition, Quaternion.identity);
+        //    }
+        //}
+        Instantiate(SmallAsteroids[0], currentPosition, Quaternion.identity);
+        Instantiate(SmallAsteroids[1], new Vector3(currentPosition.x + 2.5f, currentPosition.y, currentPosition.z), Quaternion.identity);
+        Instantiate(SmallAsteroids[2], new Vector3(currentPosition.x - 1.5f, currentPosition.y, currentPosition.z), Quaternion.identity);
+        Instantiate(SmallAsteroids[3], new Vector3(currentPosition.x - 3.5f, currentPosition.y, currentPosition.z), Quaternion.identity);
+
+
 
     }
 
     void BigAsteroidAttack()
     {
         anim.SetBool("isRightHand", true);
-        
-
+        Vector3 currentPosition = myTransform.GetChild(1).localPosition;
+        Instantiate(BigAsteroids[0], currentPosition, Quaternion.identity);
     }
 
     void DeflectAsteroidAttack()
@@ -79,9 +101,9 @@ public class Boss : MonoBehaviour
 
         Vector2 target;
 
-        if(transform.position.y <= 2.5f)
+        if(transform.position.y <= 3.47f)
         {
-            target = new Vector2(playerTarget.position.x, 2.5f);
+            target = new Vector2(playerTarget.position.x, 3.47f);
         }
         else
         {
@@ -96,7 +118,7 @@ public class Boss : MonoBehaviour
     void RandomAttack()
     {
         int rand = Random.Range(0, 3);
-        Debug.Log(timer);
+        //Debug.Log(timer);
 
         while(rand == chooseAttack)
         {
@@ -146,5 +168,15 @@ public class Boss : MonoBehaviour
     {
         MoveBoss();
         RandomAttack();
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        Debug.Log(health);
+        if(other.gameObject.CompareTag("Projectile"))
+        {
+            health--;
+            Ouchies.Post(gameObject);
+        }
     }
 }
