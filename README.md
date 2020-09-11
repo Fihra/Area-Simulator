@@ -2,6 +2,7 @@
 
 A 2D space shooter game built in Unity.
 
+Video Link:
 [![](http://img.youtube.com/vi/rDpsfB2TOX0/0.jpg)](http://www.youtube.com/watch?v=rDpsfB2TOX0 "")
 
 All assets are created by me, Fabian Fabro, with music, sound effects and art (excuse my art, I'm not great at it).I hope to release this game soon as a browser game on itch.io 
